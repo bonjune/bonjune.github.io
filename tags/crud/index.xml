@@ -8,7 +8,7 @@
     <title>쿠키런 킹덤 서버 아키텍처 2</title>
     <link>https://bonjune.github.io/posts/cookie-run-kingdom-server-architecture-2/</link>
     <pubDate>Mon, 30 Aug 2021 20:19:15 &#43;0900</pubDate>
-    <author>Jang, Bonjune</author>
+    <author>Bongjun Jang</author>
     <guid>https://bonjune.github.io/posts/cookie-run-kingdom-server-architecture-2/</guid>
     <description><![CDATA[이번 포스트에서 다룰 내용은 CRUD와 Event Sourcing이다. 이 주제는 데이터를 다루는 방법에 대한 이야기다. 가장 간단한 예로 은행 계좌를 관리하는 어플리케]]></description>
 </item>
