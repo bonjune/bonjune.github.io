@@ -1,7 +1,40 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Categories - Category - Life of Engineer&lt;Computer&gt;</title>
-        <link>http://bonjune.github.io/categories/</link>
+        <link>https://bonjune.github.io/categories/</link>
         <description>Categories - Category - Life of Engineer&lt;Computer&gt;</description>
-        <generator>Hugo -- gohugo.io</generator><language>ko-kr</language><atom:link href="http://bonjune.github.io/categories/" rel="self" type="application/rss+xml" /></channel>
+        <generator>Hugo -- gohugo.io</generator><language>ko-kr</language><managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
+            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Mon, 29 Nov 2021 08:54:51 &#43;0900</lastBuildDate><atom:link href="https://bonjune.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>computer</title>
+    <link>https://bonjune.github.io/categories/computer/</link>
+    <pubDate>Mon, 29 Nov 2021 08:54:51 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bonjune.github.io/categories/computer/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>knowledge</title>
+    <link>https://bonjune.github.io/categories/knowledge/</link>
+    <pubDate>Mon, 22 Nov 2021 21:23:00 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bonjune.github.io/categories/knowledge/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>vegabonder</title>
+    <link>https://bonjune.github.io/categories/vegabonder/</link>
+    <pubDate>Thu, 07 Oct 2021 17:36:51 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bonjune.github.io/categories/vegabonder/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>vagabonder</title>
+    <link>https://bonjune.github.io/categories/vagabonder/</link>
+    <pubDate>Thu, 23 Sep 2021 15:57:31 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bonjune.github.io/categories/vagabonder/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>

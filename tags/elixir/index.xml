@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>elixir - Tag - Life of Engineer&lt;Computer&gt;</title>
+        <link>https://bonjune.github.io/tags/elixir/</link>
+        <description>elixir - Tag - Life of Engineer&lt;Computer&gt;</description>
+        <generator>Hugo -- gohugo.io</generator><language>ko-kr</language><managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
+            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Mon, 29 Nov 2021 08:54:51 &#43;0900</lastBuildDate><atom:link href="https://bonjune.github.io/tags/elixir/" rel="self" type="application/rss+xml" /><item>
+    <title>액터 모델 실습</title>
+    <link>https://bonjune.github.io/posts/actor-model-in-practice/</link>
+    <pubDate>Mon, 29 Nov 2021 08:54:51 &#43;0900</pubDate>
+    <author>Jang, Bonjune</author>
+    <guid>https://bonjune.github.io/posts/actor-model-in-practice/</guid>
+    <description><![CDATA[Elixir Programming Language 요즘 나의 프로그래밍 공부는 Elixir를 공부하는 데 치중되어 있다. Elixir는 강타입(Strongly typed), 동적타입(Dynamically]]></description>
+</item>
+</channel>
+</rss>

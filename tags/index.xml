@@ -1,7 +1,88 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tags - Tag - Life of Engineer&lt;Computer&gt;</title>
-        <link>http://bonjune.github.io/tags/</link>
+        <link>https://bonjune.github.io/tags/</link>
         <description>Tags - Tag - Life of Engineer&lt;Computer&gt;</description>
-        <generator>Hugo -- gohugo.io</generator><language>ko-kr</language><atom:link href="http://bonjune.github.io/tags/" rel="self" type="application/rss+xml" /></channel>
+        <generator>Hugo -- gohugo.io</generator><language>ko-kr</language><managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
+            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Mon, 29 Nov 2021 08:54:51 &#43;0900</lastBuildDate><atom:link href="https://bonjune.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>actor model</title>
+    <link>https://bonjune.github.io/tags/actor-model/</link>
+    <pubDate>Mon, 29 Nov 2021 08:54:51 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bonjune.github.io/tags/actor-model/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>elixir</title>
+    <link>https://bonjune.github.io/tags/elixir/</link>
+    <pubDate>Mon, 29 Nov 2021 08:54:51 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bonjune.github.io/tags/elixir/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>bitcoin</title>
+    <link>https://bonjune.github.io/tags/bitcoin/</link>
+    <pubDate>Mon, 22 Nov 2021 21:23:00 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bonjune.github.io/tags/bitcoin/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>blockchain</title>
+    <link>https://bonjune.github.io/tags/blockchain/</link>
+    <pubDate>Mon, 22 Nov 2021 21:23:00 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bonjune.github.io/tags/blockchain/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>economics</title>
+    <link>https://bonjune.github.io/tags/economics/</link>
+    <pubDate>Mon, 22 Nov 2021 21:23:00 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bonjune.github.io/tags/economics/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>computer</title>
+    <link>https://bonjune.github.io/tags/computer/</link>
+    <pubDate>Tue, 31 Aug 2021 14:55:09 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bonjune.github.io/tags/computer/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>domain-specific-language</title>
+    <link>https://bonjune.github.io/tags/domain-specific-language/</link>
+    <pubDate>Tue, 31 Aug 2021 14:55:09 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bonjune.github.io/tags/domain-specific-language/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>functional-programming</title>
+    <link>https://bonjune.github.io/tags/functional-programming/</link>
+    <pubDate>Tue, 31 Aug 2021 14:55:09 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bonjune.github.io/tags/functional-programming/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>programming-language</title>
+    <link>https://bonjune.github.io/tags/programming-language/</link>
+    <pubDate>Tue, 31 Aug 2021 14:55:09 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bonjune.github.io/tags/programming-language/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>crud</title>
+    <link>https://bonjune.github.io/tags/crud/</link>
+    <pubDate>Mon, 30 Aug 2021 20:19:15 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bonjune.github.io/tags/crud/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>
