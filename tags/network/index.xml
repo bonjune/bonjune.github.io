@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>network - Tag - Life of Engineer&lt;Computer&gt;</title>
+        <link>https://bonjune.github.io/tags/network/</link>
+        <description>network - Tag - Life of Engineer&lt;Computer&gt;</description>
+        <generator>Hugo -- gohugo.io</generator><language>ko</language><managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
+            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Fri, 23 Jun 2023 05:26:32 &#43;0900</lastBuildDate><atom:link href="https://bonjune.github.io/tags/network/" rel="self" type="application/rss+xml" /><item>
+    <title>IoT를 이루는 네트워크: ZigBee</title>
+    <link>https://bonjune.github.io/posts/iot-network-zigbee/</link>
+    <pubDate>Fri, 23 Jun 2023 05:26:32 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bonjune.github.io/posts/iot-network-zigbee/</guid>
+    <description><![CDATA[Overview IoT (Internet-of-Things)에는 여러 네트워크 프로토콜이 혼재한다. 전원이 항상 연결되어 있거나 주기적으로 충전해줄 수 있는 경우가 많지 않]]></description>
+</item>
+</channel>
+</rss>

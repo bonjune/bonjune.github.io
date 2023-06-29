@@ -4,7 +4,31 @@
         <link>https://bonjune.github.io/tags/</link>
         <description>Tags - Tag - Life of Engineer&lt;Computer&gt;</description>
         <generator>Hugo -- gohugo.io</generator><language>ko</language><managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
-            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Mon, 29 Nov 2021 08:54:51 &#43;0900</lastBuildDate><atom:link href="https://bonjune.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Thu, 29 Jun 2023 13:00:00 &#43;0900</lastBuildDate><atom:link href="https://bonjune.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>c</title>
+    <link>https://bonjune.github.io/tags/c/</link>
+    <pubDate>Thu, 29 Jun 2023 13:00:00 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bonjune.github.io/tags/c/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>programming</title>
+    <link>https://bonjune.github.io/tags/programming/</link>
+    <pubDate>Thu, 29 Jun 2023 13:00:00 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bonjune.github.io/tags/programming/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>zig</title>
+    <link>https://bonjune.github.io/tags/zig/</link>
+    <pubDate>Thu, 29 Jun 2023 13:00:00 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bonjune.github.io/tags/zig/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>actor model</title>
     <link>https://bonjune.github.io/tags/actor-model/</link>
     <pubDate>Mon, 29 Nov 2021 08:54:51 &#43;0900</pubDate>
@@ -58,30 +82,6 @@
     <pubDate>Tue, 31 Aug 2021 14:55:09 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
     <guid>https://bonjune.github.io/tags/domain-specific-language/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>functional-programming</title>
-    <link>https://bonjune.github.io/tags/functional-programming/</link>
-    <pubDate>Tue, 31 Aug 2021 14:55:09 &#43;0900</pubDate>
-    <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/tags/functional-programming/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>programming-language</title>
-    <link>https://bonjune.github.io/tags/programming-language/</link>
-    <pubDate>Tue, 31 Aug 2021 14:55:09 &#43;0900</pubDate>
-    <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/tags/programming-language/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>crud</title>
-    <link>https://bonjune.github.io/tags/crud/</link>
-    <pubDate>Mon, 30 Aug 2021 20:19:15 &#43;0900</pubDate>
-    <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/tags/crud/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

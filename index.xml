@@ -4,9 +4,17 @@
         <link>https://bonjune.github.io/</link>
         <description>Life of Engineer&lt;Computer&gt;</description>
         <generator>Hugo -- gohugo.io</generator><language>ko</language><managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
-            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Wed, 01 Feb 2023 12:00:00 &#43;0900</lastBuildDate>
+            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Thu, 29 Jun 2023 13:00:00 &#43;0900</lastBuildDate>
             <atom:link href="https://bonjune.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Odroid 개발보드에서 Zig와 C를 같이 사용하기</title>
+    <link>https://bonjune.github.io/posts/using-zig-with-c-1/</link>
+    <pubDate>Thu, 29 Jun 2023 13:00:00 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bonjune.github.io/posts/using-zig-with-c-1/</guid>
+    <description><![CDATA[Odroid-N2&#43; 개발 보드 Odroid-N2+ 개발 보드를 구입해서 네트워크 연결을 관리하는 프로그램을 작성하는 실험을 해보고 있다. 개발 보드에 설치된 우분투 리눅스에서 블루투스나 ZigBee 등 네트워]]></description>
+</item>
+<item>
     <title>모든 프레임워크는 새로운 언어다</title>
     <link>https://bonjune.github.io/posts/2023-02-01-every-new-framework-is-new-language/</link>
     <pubDate>Wed, 01 Feb 2023 12:00:00 &#43;0900</pubDate>
@@ -77,14 +85,6 @@
     <author>Bongjun Jang</author>
     <guid>https://bonjune.github.io/posts/cookie-run-kingdom-server-architecture-3/</guid>
     <description><![CDATA[세번쨰 주제에서 함수형 프로그래밍에 대한 이야기가 눈에 띈다. 영상에서 소개되는 &lsquo;프로그램&rsquo;이라는 개념은 함수형 프로그래밍의 &l]]></description>
-</item>
-<item>
-    <title>쿠키런 킹덤 서버 아키텍처 2</title>
-    <link>https://bonjune.github.io/posts/cookie-run-kingdom-server-architecture-2/</link>
-    <pubDate>Mon, 30 Aug 2021 20:19:15 &#43;0900</pubDate>
-    <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/posts/cookie-run-kingdom-server-architecture-2/</guid>
-    <description><![CDATA[이번 포스트에서 다룰 내용은 CRUD와 Event Sourcing이다. 이 주제는 데이터를 다루는 방법에 대한 이야기다. 가장 간단한 예로 은행 계좌를 관리하는 어플리케]]></description>
 </item>
 </channel>
 </rss>

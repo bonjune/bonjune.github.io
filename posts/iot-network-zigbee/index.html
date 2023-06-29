@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>IoT를 이루는 네트워크: ZigBee - Life of Engineer&lt;Computer&gt;</title><meta name="Description" content="Life of Engineer&lt;Computer&gt;"><meta property="og:title" content="IoT를 이루는 네트워크: ZigBee" />
+<meta property="og:description" content="Overview IoT (Internet-of-Things)에는 여러 네트워크 프로토콜이 혼재한다. 전원이 항상 연결되어 있거나 주기적으로 충전해줄 수 있는 경우가 많지 않" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bonjune.github.io/posts/iot-network-zigbee/" /><meta property="og:image" content="https://bonjune.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-06-23T05:26:32+09:00" />
+<meta property="article:modified_time" content="2023-06-23T05:26:32+09:00" /><meta property="og:site_name" content="Life of Engineer&lt;Computer&gt;" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://bonjune.github.io/logo.png"/>
+
+<meta name="twitter:title" content="IoT를 이루는 네트워크: ZigBee"/>
+<meta name="twitter:description" content="Overview IoT (Internet-of-Things)에는 여러 네트워크 프로토콜이 혼재한다. 전원이 항상 연결되어 있거나 주기적으로 충전해줄 수 있는 경우가 많지 않"/>
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://bonjune.github.io/posts/iot-network-zigbee/" /><link rel="prev" href="https://bonjune.github.io/posts/2023-02-01-every-new-framework-is-new-language/" /><link rel="next" href="https://bonjune.github.io/posts/using-zig-with-c-1/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "IoT를 이루는 네트워크: ZigBee",
+        "inLanguage": "ko",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/bonjune.github.io\/posts\/iot-network-zigbee\/"
+        },"genre": "posts","keywords": "network, iot, zigbee","wordcount":  1772 ,
+        "url": "https:\/\/bonjune.github.io\/posts\/iot-network-zigbee\/","datePublished": "2023-06-23T05:26:32+09:00","dateModified": "2023-06-23T05:26:32+09:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Bongjun Jang"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Life of Engineer&lt;Computer&gt;">Life of Engineer&lt;Computer&gt;</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Life of Engineer&lt;Computer&gt;">Life of Engineer&lt;Computer&gt;</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">IoT를 이루는 네트워크: ZigBee</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Bongjun Jang</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-06-23">2023-06-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1772 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#물리-및-링크-레이어">물리 및 링크 레이어</a></li>
+    <li><a href="#zigbee">ZigBee</a>
+      <ul>
+        <li><a href="#zigbee-프로토콜-특성">ZigBee 프로토콜 특성</a></li>
+        <li><a href="#zigbee-프로토콜-개념">ZigBee 프로토콜 개념</a></li>
+        <li><a href="#zigbee-cluster">ZigBee Cluster</a></li>
+      </ul>
+    </li>
+    <li><a href="#thread">Thread</a></li>
+    <li><a href="#matter">Matter</a></li>
+    <li><a href="#home-control-system">Home Control System</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="overview">Overview</h2>
+<p>IoT (Internet-of-Things)에는 여러 네트워크 프로토콜이 혼재한다.
+전원이 항상 연결되어 있거나 주기적으로 충전해줄 수 있는 경우가 많지 않기 때문에 저전력 요구사항을 요구하기 때문에 이를 충족시키기 위한 프로토콜이 필요하다.
+대표적으로 ZigBee와 Z-Wave, BLE(Bluetooth Low Energy) 등이 이러한 요구사항을 충적하며,
+전력이 안정적으로 공급될 수 있다면 WiFi 등을 사용할 수도 있다.</p>
+<p>이 중 ZigBee는 이러한 저비용, 저전력, 무선이라는 요구사항을 위해 ZigBee alliance에서 개발한 통신 프로토콜이다.
+ZigBee는 레이어 구조(layered architecture)를 가지며, 물리(physical) 및 링크(link) 레이어와 네트워크 레이어(NWK), 어플리케이션 레이어로 이루어진다.
+ZigBee Alliance가 제공하는 어플리케이션 레이어 프레임워크에는 어플리케이션 지원 서브레이어(APS)와 ZigBee device objects(ZDO)가 있다.</p>
+
+
+
+
+  <figure>
+    <div>
+      <img
+        srcset='
+                /posts/iot-network-zigbee/zigbee-stack-architecture-overview_hu7fba9da1679ce4a56c592454604cb9c1_268861_320x0_resize_q75_box.jpg 320w,
+                /posts/iot-network-zigbee/zigbee-stack-architecture-overview_hu7fba9da1679ce4a56c592454604cb9c1_268861_600x0_resize_q75_box.jpg 600w,
+                /posts/iot-network-zigbee/zigbee-stack-architecture-overview_hu7fba9da1679ce4a56c592454604cb9c1_268861_1200x0_resize_q75_box.jpg 2x'
+        src='/posts/iot-network-zigbee/zigbee-stack-architecture-overview_hu7fba9da1679ce4a56c592454604cb9c1_268861_600x0_resize_q75_box.jpg'
+        alt="zigbee architecture overview" />
+    </div>
+    <figcaption>
+      <p></p>
+    </figcaption>
+  </figure>
+
+<h2 id="물리-및-링크-레이어">물리 및 링크 레이어</h2>
+<p>ZigBee 네트워크는 868/915 MHz 또는 2.4 GHz 대역에서 운용된다.
+CSMA-CA 또는 LBT 메커니즘을 사용해 무선 통신을 제어한다.</p>
+<h2 id="zigbee">ZigBee</h2>
+<h3 id="zigbee-프로토콜-특성">ZigBee 프로토콜 특성</h3>
+<p>ZigBee는 저전력 및 저대역폭 프로토콜로 센서나 소형 디바이스를 근거리(10~100m)에서 연결하기 위해 사용한다.
+사용 전력이나 환경에 따라 10~100미터 정도를 도달할 수 있으며, Bluetooth보다 단순한 프로토콜을 제공한다.
+ZigBee 통신은 128비트 대칭키로 암호화되며 최대 250 Kb/s (킬로비트) 까지 통신이 가능하다.</p>
+<p>ZigBee 네트워크에는 다음 세가지 디바이스가 참여한다.</p>
+<ol>
+<li>ZigBee Coordinator: 네트워크를 제어하는 중앙 디바이스다. 보통 네트워크에서 유일하게 존재한다.</li>
+<li>ZigBee Router
+<ul>
+<li>신호 중개기(repeater)다. ZigBee 신호를 받아 더 멀리 보낸다.</li>
+<li>수면(sleep) 하면 안된다. 네트워크가 끊어질 수 있다. 안정적인 전원 공급이 필요하다.</li>
+<li>네트워크에 새로운 노드가 참여하도록 할 지 결정할 수 있다.</li>
+</ul>
+</li>
+<li>ZigBee End Device
+<ul>
+<li>신호를 발생시키는 센서나 신호를 받아 행동을 수행하는 디바이스라고 생각하면 된다.</li>
+<li>수면(sleep)이 가능하다. 따라서 배터리 전원을 사용하기 적합하다.</li>
+<li>하나의 부모 노드만 가진다. (a coordinator or a router)</li>
+</ul>
+</li>
+</ol>
+<h3 id="zigbee-프로토콜-개념">ZigBee 프로토콜 개념</h3>
+<p>인터넷 프로토콜로 생각하면 Link Layer Protocol이다.
+OSI 모델에서는 링크 및 물리 레이어로 보면 된다.
+IEEE 802.15.4 표준을 따르며 이는 6LoWPAN, Thread, Z-Wave 또한 사용하는 표준이다.
+IEEE 802.15.4에는 사용할 수 있는 대역이 여러가지가 있는데 ZigBee는 2.4GHz를 사용하며 Z-Wave는 나라마다 다를 수 있지만 8/900MHz를 사용한다.</p>
+<h4 id="zigbee-endpoint-엔드포인트">ZigBee Endpoint (엔드포인트)</h4>
+<p>TCP/IP의 포트 개념이다. TCP에서 한 머신이 네트워크 상에서 여러 포트를 사용할 수 있는 것처럼 ZigBee 또한 한 디바이스가 여러 엔드포인트를 가질 수 있다.</p>
+<h3 id="zigbee-cluster">ZigBee Cluster</h3>
+<p>ZigBee는 네트워크에서 운용할 수 있는 표준 어플리케이션을 정의한다.
+해당 어플리케이션들은 ZigBee Cluster Library Specification에 정의되어 있다.
+한 클러스터는 어플리케이션 통신의 타입을 지정하며, 어플리케이션 통신 타입은 정수로 된 ID를 가진다.
+어플리케이션 통신 타입은 클라이언트 또는 서버로 나뉘며 일반적으로 서버는 클라리언트보다 더 자주 실행되고, 클라이언트는 서버에 연결하려고 한다. 하지만 서버와 클라이언트의 명확한 구분은 없다.</p>
+<p>ZigBee 컨트롤러는 클러스터를 두 엔드포인트에 각각 연결할 수 있다.
+한 쪽에는 클러스터의 서버 타입, 또 다른 한 쪽에는 클러스터의 클라이언트 타입을 지정한다.</p>
+<p>일반적인 클러스터 외에도 그룹 클러스터가 있다.
+한 엔드포인트는 여러 그룹에 소속될 수 있으며 디바이스는 어떤 그룹에 속해있었는지 기억한다.
+그룹은 엔드포인트처럼 작동할 수 있어서, 그룹에 메시지가 오면 그룹 네트워크에 있는 모든 디바이스에 브로드캐스트된다.
+이를 통해 한 스위치로 여러 개의 전등을 키고 끌 수 있는 기능을 구현할 수 있다.</p>
+<p>또한 씬(Scene) 클러스터도 있다.
+씬 클러스터를 이용하면 클러스터를 구현할 때의 설정값을 기억하도록 할 수 있다.
+예를 들어 전등은 밝기를, 블라인드 커튼은 높이를 기억할 수 있다.
+각 디바이스는 여러 씬을 기억할 수 있다.
+이를 통해 디바이스들을 제어할 때 씬 ID만을 이용해 그룹 안에 있는 여러 디바이스를 제어할 수 있으므로 통신 대역폭을 절약할 수 있다.</p>
+<p>ZigBee 스틱: <a href="https://ko.aliexpress.com/item/1005003637706867.html?spm=a2g0o.detail.100009.3.65417e16NI4riT&amp;gps-id=pcDetailLeftTopSell&amp;scm=1007.13482.271138.0&amp;scm_id=1007.13482.271138.0&amp;scm-url=1007.13482.271138.0&amp;pvid=a7eaa535-2f27-4364-bdb5-298e06076ef5&amp;_t=gps-id%3ApcDetailLeftTopSell%2Cscm-url%3A1007.13482.271138.0%2Cpvid%3Aa7eaa535-2f27-4364-bdb5-298e06076ef5%2Ctpp_buckets%3A668%232846%238116%232002&amp;pdp_npi=3%40dis%21KRW%217554.0%216798.0%21%21%21%21%21%4021015b7d16874847599967737e76c2%2112000028014985500%21rec%21KR%21&amp;gatewayAdapt=glo2kor" target="_blank" rel="noopener noreffer ">SONOFF ZBDongle P 범용 지그비 3.0 USB 스틱 게이트웨이 동글 플러스 분석기, USB 인터페이스 캡처 패킷, ZHA ZigBee2MQTT|스위치| - AliExpress</a></p>
+<h2 id="thread">Thread</h2>
+<h2 id="matter">Matter</h2>
+<p>Matter는 정확히 말하면 네트워크 프로토콜이 아니라 규격(Standard)이다.
+2년마다 업데이트되며 IoT 디바이스 를지원하는 네트워크 프로토콜, behavior 등을 표준화한다.</p>
+<h2 id="home-control-system">Home Control System</h2>
+<ul>
+<li>Amazon Alexa</li>
+<li>Samsung SmartThings</li>
+<li>AppleHomeKit</li>
+<li>HomeAssistant</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-06-23</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://bonjune.github.io/posts/iot-network-zigbee/" data-title="IoT를 이루는 네트워크: ZigBee" data-hashtags="network,iot,zigbee"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://bonjune.github.io/posts/iot-network-zigbee/" data-hashtag="network"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://bonjune.github.io/posts/iot-network-zigbee/" data-title="IoT를 이루는 네트워크: ZigBee"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://bonjune.github.io/posts/iot-network-zigbee/" data-title="IoT를 이루는 네트워크: ZigBee"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://bonjune.github.io/posts/iot-network-zigbee/" data-title="IoT를 이루는 네트워크: ZigBee"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/network/">network</a>,&nbsp;<a href="/tags/iot/">iot</a>,&nbsp;<a href="/tags/zigbee/">zigbee</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/2023-02-01-every-new-framework-is-new-language/" class="prev" rel="prev" title="모든 프레임워크는 새로운 언어다"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>모든 프레임워크는 새로운 언어다</a>
+            <a href="/posts/using-zig-with-c-1/" class="next" rel="next" title="Odroid 개발보드에서 Zig와 C를 같이 사용하기">Odroid 개발보드에서 Zig와 C를 같이 사용하기<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.114.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Bongjun Jang</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.b0df51c2c57145081cc73960e9aa780e6f5f56d06cf4ef0f96da8ce1619d1e12.js" integrity="sha256-sN9RwsVxRQgcxzlg6ap4Dm9fVtBs9O8PltqM4WGdHhI="></script></body>
+</html>
