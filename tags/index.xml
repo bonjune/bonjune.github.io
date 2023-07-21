@@ -1,87 +1,87 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Tags - Tag - Life of Engineer&lt;Computer&gt;</title>
-        <link>https://bonjune.github.io/tags/</link>
-        <description>Tags - Tag - Life of Engineer&lt;Computer&gt;</description>
+        <title>Tags - Tag - Bongjun Jang</title>
+        <link>https://bongjunjang.com/tags/</link>
+        <description>Tags - Tag - Bongjun Jang</description>
         <generator>Hugo -- gohugo.io</generator><language>ko</language><managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
-            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Thu, 29 Jun 2023 13:00:00 &#43;0900</lastBuildDate><atom:link href="https://bonjune.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Thu, 29 Jun 2023 13:00:00 &#43;0900</lastBuildDate><atom:link href="https://bongjunjang.com/tags/" rel="self" type="application/rss+xml" /><item>
     <title>c</title>
-    <link>https://bonjune.github.io/tags/c/</link>
+    <link>https://bongjunjang.com/tags/c/</link>
     <pubDate>Thu, 29 Jun 2023 13:00:00 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/tags/c/</guid>
+    <guid>https://bongjunjang.com/tags/c/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>programming</title>
-    <link>https://bonjune.github.io/tags/programming/</link>
+    <link>https://bongjunjang.com/tags/programming/</link>
     <pubDate>Thu, 29 Jun 2023 13:00:00 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/tags/programming/</guid>
+    <guid>https://bongjunjang.com/tags/programming/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>zig</title>
-    <link>https://bonjune.github.io/tags/zig/</link>
+    <link>https://bongjunjang.com/tags/zig/</link>
     <pubDate>Thu, 29 Jun 2023 13:00:00 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/tags/zig/</guid>
+    <guid>https://bongjunjang.com/tags/zig/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>actor model</title>
-    <link>https://bonjune.github.io/tags/actor-model/</link>
+    <link>https://bongjunjang.com/tags/actor-model/</link>
     <pubDate>Mon, 29 Nov 2021 08:54:51 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/tags/actor-model/</guid>
+    <guid>https://bongjunjang.com/tags/actor-model/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>elixir</title>
-    <link>https://bonjune.github.io/tags/elixir/</link>
+    <link>https://bongjunjang.com/tags/elixir/</link>
     <pubDate>Mon, 29 Nov 2021 08:54:51 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/tags/elixir/</guid>
+    <guid>https://bongjunjang.com/tags/elixir/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>bitcoin</title>
-    <link>https://bonjune.github.io/tags/bitcoin/</link>
+    <link>https://bongjunjang.com/tags/bitcoin/</link>
     <pubDate>Mon, 22 Nov 2021 21:23:00 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/tags/bitcoin/</guid>
+    <guid>https://bongjunjang.com/tags/bitcoin/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>blockchain</title>
-    <link>https://bonjune.github.io/tags/blockchain/</link>
+    <link>https://bongjunjang.com/tags/blockchain/</link>
     <pubDate>Mon, 22 Nov 2021 21:23:00 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/tags/blockchain/</guid>
+    <guid>https://bongjunjang.com/tags/blockchain/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>economics</title>
-    <link>https://bonjune.github.io/tags/economics/</link>
+    <link>https://bongjunjang.com/tags/economics/</link>
     <pubDate>Mon, 22 Nov 2021 21:23:00 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/tags/economics/</guid>
+    <guid>https://bongjunjang.com/tags/economics/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>computer</title>
-    <link>https://bonjune.github.io/tags/computer/</link>
+    <link>https://bongjunjang.com/tags/computer/</link>
     <pubDate>Tue, 31 Aug 2021 14:55:09 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/tags/computer/</guid>
+    <guid>https://bongjunjang.com/tags/computer/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>domain-specific-language</title>
-    <link>https://bonjune.github.io/tags/domain-specific-language/</link>
+    <link>https://bongjunjang.com/tags/domain-specific-language/</link>
     <pubDate>Tue, 31 Aug 2021 14:55:09 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/tags/domain-specific-language/</guid>
+    <guid>https://bongjunjang.com/tags/domain-specific-language/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

@@ -1,23 +1,23 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>knowledge - Category - Life of Engineer&lt;Computer&gt;</title>
-        <link>https://bonjune.github.io/categories/knowledge/</link>
-        <description>knowledge - Category - Life of Engineer&lt;Computer&gt;</description>
+        <title>knowledge - Category - Bongjun Jang</title>
+        <link>https://bongjunjang.com/categories/knowledge/</link>
+        <description>knowledge - Category - Bongjun Jang</description>
         <generator>Hugo -- gohugo.io</generator><language>ko</language><managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
-            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Mon, 22 Nov 2021 21:23:00 &#43;0900</lastBuildDate><atom:link href="https://bonjune.github.io/categories/knowledge/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Mon, 22 Nov 2021 21:23:00 &#43;0900</lastBuildDate><atom:link href="https://bongjunjang.com/categories/knowledge/" rel="self" type="application/rss+xml" /><item>
     <title>비트코인을 지탱하는 원동력</title>
-    <link>https://bonjune.github.io/posts/what-runs-bitcoin-network/</link>
+    <link>https://bongjunjang.com/posts/what-runs-bitcoin-network/</link>
     <pubDate>Mon, 22 Nov 2021 21:23:00 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/posts/what-runs-bitcoin-network/</guid>
+    <guid>https://bongjunjang.com/posts/what-runs-bitcoin-network/</guid>
     <description><![CDATA[비트코인으로 대표되는 블록체인은 집중형 시스템과는 확실히 차별점이 있는 방식이다. 전통적인 방식에서는 모든 데이터를 저장하는 서버가 있고 클라이언트들의 요청]]></description>
 </item>
 <item>
     <title>베이비 시팅 쿠폰 실험</title>
-    <link>https://bonjune.github.io/posts/baby-sitting-coupon-experiment/</link>
+    <link>https://bongjunjang.com/posts/baby-sitting-coupon-experiment/</link>
     <pubDate>Wed, 17 Nov 2021 15:53:34 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/posts/baby-sitting-coupon-experiment/</guid>
+    <guid>https://bongjunjang.com/posts/baby-sitting-coupon-experiment/</guid>
     <description><![CDATA[우리가 일상에서 겪는 모든 경제활동에서 우리는 값을 치를 때 화폐(money)를 사용한다. 맥도날드에서 햄버거를 사먹을 때, 쿠팡에서 생필품을 주문할 때, 월급]]></description>
 </item>
 </channel>

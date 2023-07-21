@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>zig - Tag - Life of Engineer&lt;Computer&gt;</title>
-        <link>https://bonjune.github.io/tags/zig/</link>
-        <description>zig - Tag - Life of Engineer&lt;Computer&gt;</description>
+        <title>zig - Tag - Bongjun Jang</title>
+        <link>https://bongjunjang.com/tags/zig/</link>
+        <description>zig - Tag - Bongjun Jang</description>
         <generator>Hugo -- gohugo.io</generator><language>ko</language><managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
-            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Thu, 29 Jun 2023 13:00:00 &#43;0900</lastBuildDate><atom:link href="https://bonjune.github.io/tags/zig/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Thu, 29 Jun 2023 13:00:00 &#43;0900</lastBuildDate><atom:link href="https://bongjunjang.com/tags/zig/" rel="self" type="application/rss+xml" /><item>
     <title>Odroid 개발보드에서 Zig와 C를 같이 사용하기</title>
-    <link>https://bonjune.github.io/posts/using-zig-with-c-1/</link>
+    <link>https://bongjunjang.com/posts/using-zig-with-c-1/</link>
     <pubDate>Thu, 29 Jun 2023 13:00:00 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/posts/using-zig-with-c-1/</guid>
+    <guid>https://bongjunjang.com/posts/using-zig-with-c-1/</guid>
     <description><![CDATA[Odroid-N2&#43; 개발 보드 Odroid-N2+ 개발 보드를 구입해서 네트워크 연결을 관리하는 프로그램을 작성하는 실험을 해보고 있다. 개발 보드에 설치된 우분투 리눅스에서 블루투스나 ZigBee 등 네트워]]></description>
 </item>
 </channel>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Bongjun Jang</title>
+    <link>https://bongjunjang.com/projects/</link>
+    <description>Recent content in Projects on Bongjun Jang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
+    <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster>
+    <lastBuildDate>Wed, 26 Oct 2022 12:56:00 +0900</lastBuildDate><atom:link href="https://bongjunjang.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>KENS 내부 들여다보기</title>
+      <link>https://bongjunjang.com/projects/2022-10-26-reading-kens-internals/</link>
+      <pubDate>Wed, 26 Oct 2022 12:56:00 +0900</pubDate>
+      <author>bongjun.jang@kaist.ac.kr (Bongjun Jang)</author>
+      <guid>https://bongjunjang.com/projects/2022-10-26-reading-kens-internals/</guid>
+      <description>2022년 가을학기 전산망 개론에서 KENS 프로젝트를 통해 TCP/IP의 3-Way Handshaking과 Reliable Data Transfer를 구현하였다. 교수님의 판단으로 Flow</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,47 +1,47 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>computer - Category - Life of Engineer&lt;Computer&gt;</title>
-        <link>https://bonjune.github.io/categories/computer/</link>
-        <description>computer - Category - Life of Engineer&lt;Computer&gt;</description>
+        <title>computer - Category - Bongjun Jang</title>
+        <link>https://bongjunjang.com/categories/computer/</link>
+        <description>computer - Category - Bongjun Jang</description>
         <generator>Hugo -- gohugo.io</generator><language>ko</language><managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
-            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Mon, 29 Nov 2021 08:54:51 &#43;0900</lastBuildDate><atom:link href="https://bonjune.github.io/categories/computer/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Mon, 29 Nov 2021 08:54:51 &#43;0900</lastBuildDate><atom:link href="https://bongjunjang.com/categories/computer/" rel="self" type="application/rss+xml" /><item>
     <title>액터 모델 실습</title>
-    <link>https://bonjune.github.io/posts/actor-model-in-practice/</link>
+    <link>https://bongjunjang.com/posts/actor-model-in-practice/</link>
     <pubDate>Mon, 29 Nov 2021 08:54:51 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/posts/actor-model-in-practice/</guid>
+    <guid>https://bongjunjang.com/posts/actor-model-in-practice/</guid>
     <description><![CDATA[Elixir Programming Language 요즘 나의 프로그래밍 공부는 Elixir를 공부하는 데 치중되어 있다. Elixir는 강타입(Strongly typed), 동적타입(Dynamically]]></description>
 </item>
 <item>
     <title>쿠키런 킹덤 서버 아키텍처 3</title>
-    <link>https://bonjune.github.io/posts/cookie-run-kingdom-server-architecture-3/</link>
+    <link>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-3/</link>
     <pubDate>Tue, 31 Aug 2021 14:55:09 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/posts/cookie-run-kingdom-server-architecture-3/</guid>
+    <guid>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-3/</guid>
     <description><![CDATA[세번쨰 주제에서 함수형 프로그래밍에 대한 이야기가 눈에 띈다. 영상에서 소개되는 &lsquo;프로그램&rsquo;이라는 개념은 함수형 프로그래밍의 &l]]></description>
 </item>
 <item>
     <title>쿠키런 킹덤 서버 아키텍처 2</title>
-    <link>https://bonjune.github.io/posts/cookie-run-kingdom-server-architecture-2/</link>
+    <link>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-2/</link>
     <pubDate>Mon, 30 Aug 2021 20:19:15 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/posts/cookie-run-kingdom-server-architecture-2/</guid>
+    <guid>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-2/</guid>
     <description><![CDATA[이번 포스트에서 다룰 내용은 CRUD와 Event Sourcing이다. 이 주제는 데이터를 다루는 방법에 대한 이야기다. 가장 간단한 예로 은행 계좌를 관리하는 어플리케]]></description>
 </item>
 <item>
     <title>쿠키런 킹덤 서버 아키텍처 1</title>
-    <link>https://bonjune.github.io/posts/cookie-run-kingdom-server-architecture-1/</link>
+    <link>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-1/</link>
     <pubDate>Sun, 29 Aug 2021 12:37:24 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/posts/cookie-run-kingdom-server-architecture-1/</guid>
+    <guid>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-1/</guid>
     <description><![CDATA[Actor Model에 대해서 정리하며 포스트를 쓰려다가 예전에 봤던 NDC21-프로그래밍, 쿠키런 킹덤 서버 아키텍처 뜯어먹기가 떠올라서 리뷰해보려고 한다. 서버]]></description>
 </item>
 <item>
     <title>컴퓨터와 시간</title>
-    <link>https://bonjune.github.io/posts/computer-and-time/</link>
+    <link>https://bongjunjang.com/posts/computer-and-time/</link>
     <pubDate>Sat, 28 Aug 2021 12:35:23 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/posts/computer-and-time/</guid>
+    <guid>https://bongjunjang.com/posts/computer-and-time/</guid>
     <description><![CDATA[거대한 시차 해외로 가는 비행기표를 찾아볼 때 우리는 우리의 표준시와 도착지의 표준시를 비교한다. 서울은 뉴욕보다 14시간 빠르다. 일광절약제가 적용되는 때에는]]></description>
 </item>
 </channel>

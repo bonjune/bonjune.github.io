@@ -1,88 +1,88 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>All Posts - Life of Engineer&lt;Computer&gt;</title>
-        <link>https://bonjune.github.io/posts/</link>
-        <description>All Posts | Life of Engineer&lt;Computer&gt;</description>
+        <title>All Posts - Bongjun Jang</title>
+        <link>https://bongjunjang.com/posts/</link>
+        <description>All Posts | Bongjun Jang</description>
         <generator>Hugo -- gohugo.io</generator><language>ko</language><managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
-            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Thu, 29 Jun 2023 13:00:00 &#43;0900</lastBuildDate><atom:link href="https://bonjune.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Thu, 29 Jun 2023 13:00:00 &#43;0900</lastBuildDate><atom:link href="https://bongjunjang.com/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Odroid 개발보드에서 Zig와 C를 같이 사용하기</title>
-    <link>https://bonjune.github.io/posts/using-zig-with-c-1/</link>
+    <link>https://bongjunjang.com/posts/using-zig-with-c-1/</link>
     <pubDate>Thu, 29 Jun 2023 13:00:00 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/posts/using-zig-with-c-1/</guid>
+    <guid>https://bongjunjang.com/posts/using-zig-with-c-1/</guid>
     <description><![CDATA[Odroid-N2&#43; 개발 보드 Odroid-N2+ 개발 보드를 구입해서 네트워크 연결을 관리하는 프로그램을 작성하는 실험을 해보고 있다. 개발 보드에 설치된 우분투 리눅스에서 블루투스나 ZigBee 등 네트워]]></description>
 </item>
 <item>
     <title>모든 프레임워크는 새로운 언어다</title>
-    <link>https://bonjune.github.io/posts/2023-02-01-every-new-framework-is-new-language/</link>
+    <link>https://bongjunjang.com/posts/2023-02-01-every-new-framework-is-new-language/</link>
     <pubDate>Wed, 01 Feb 2023 12:00:00 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/posts/2023-02-01-every-new-framework-is-new-language/</guid>
+    <guid>https://bongjunjang.com/posts/2023-02-01-every-new-framework-is-new-language/</guid>
     <description><![CDATA[웹 개발의 세계에는 수백 수천 가지의 프레임워크가 있고, 아마 지금도 새로운 프레임워크가 탄생하고 있을 것이다. 프레임워크는 웹 어플리케이션을 작성하는 데 필요한]]></description>
 </item>
 <item>
-    <title>KENS 코드 들여다보기</title>
-    <link>https://bonjune.github.io/posts/2022-10-26-ensir-kens-1/</link>
-    <pubDate>Wed, 26 Oct 2022 12:56:00 &#43;0900</pubDate>
-    <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/posts/2022-10-26-ensir-kens-1/</guid>
-    <description><![CDATA[System&rsquo;s Properties private: std::unordered_set&lt;std::shared_ptr&lt;Runnable&gt;&gt; runnableReady; // ... protected: // ... std::unordered_map&lt;ModuleID, std::shared_ptr&lt;Module&gt;&gt; registeredModule; private: std::priority_queue&lt;TimerContainer, std::vector&lt;TimerContainer&gt;, TimerContainerLess&gt; timerQueue; std::unordered_map&lt;UUID, TimerContainer&gt; activeTimer; std::unordered_set&lt;UUID&gt; activeUUID; Runnable, Module, TimerContainer를 관리하고 있다. Runnable class Runnable { protected: // ... virtual void main() = 0; // main program logic virtual void run() final; public: enum class]]></description>
-</item>
-<item>
     <title>액터 모델 실습</title>
-    <link>https://bonjune.github.io/posts/actor-model-in-practice/</link>
+    <link>https://bongjunjang.com/posts/actor-model-in-practice/</link>
     <pubDate>Mon, 29 Nov 2021 08:54:51 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/posts/actor-model-in-practice/</guid>
+    <guid>https://bongjunjang.com/posts/actor-model-in-practice/</guid>
     <description><![CDATA[Elixir Programming Language 요즘 나의 프로그래밍 공부는 Elixir를 공부하는 데 치중되어 있다. Elixir는 강타입(Strongly typed), 동적타입(Dynamically]]></description>
 </item>
 <item>
     <title>비트코인을 지탱하는 원동력</title>
-    <link>https://bonjune.github.io/posts/what-runs-bitcoin-network/</link>
+    <link>https://bongjunjang.com/posts/what-runs-bitcoin-network/</link>
     <pubDate>Mon, 22 Nov 2021 21:23:00 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/posts/what-runs-bitcoin-network/</guid>
+    <guid>https://bongjunjang.com/posts/what-runs-bitcoin-network/</guid>
     <description><![CDATA[비트코인으로 대표되는 블록체인은 집중형 시스템과는 확실히 차별점이 있는 방식이다. 전통적인 방식에서는 모든 데이터를 저장하는 서버가 있고 클라이언트들의 요청]]></description>
 </item>
 <item>
     <title>베이비 시팅 쿠폰 실험</title>
-    <link>https://bonjune.github.io/posts/baby-sitting-coupon-experiment/</link>
+    <link>https://bongjunjang.com/posts/baby-sitting-coupon-experiment/</link>
     <pubDate>Wed, 17 Nov 2021 15:53:34 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/posts/baby-sitting-coupon-experiment/</guid>
+    <guid>https://bongjunjang.com/posts/baby-sitting-coupon-experiment/</guid>
     <description><![CDATA[우리가 일상에서 겪는 모든 경제활동에서 우리는 값을 치를 때 화폐(money)를 사용한다. 맥도날드에서 햄버거를 사먹을 때, 쿠팡에서 생필품을 주문할 때, 월급]]></description>
 </item>
 <item>
     <title>2019 Vagabonder 3</title>
-    <link>https://bonjune.github.io/posts/2019-vagabonder-3/</link>
+    <link>https://bongjunjang.com/posts/2019-vagabonder-3/</link>
     <pubDate>Thu, 07 Oct 2021 17:36:51 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/posts/2019-vagabonder-3/</guid>
+    <guid>https://bongjunjang.com/posts/2019-vagabonder-3/</guid>
     <description><![CDATA[이르쿠츠크의 앙가라 강 이르쿠츠크의 야경 이르쿠츠크 9월 4일, 바이칼 호수 투어를 마치고 이르쿠츠크로 돌아온 승민이와 나. 에어비엔비 숙소 위치가 헷갈려서 같은]]></description>
 </item>
 <item>
     <title>2019 Vagabonder 2</title>
-    <link>https://bonjune.github.io/posts/2019-vagabonder-2/</link>
+    <link>https://bongjunjang.com/posts/2019-vagabonder-2/</link>
     <pubDate>Thu, 23 Sep 2021 15:57:31 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/posts/2019-vagabonder-2/</guid>
+    <guid>https://bongjunjang.com/posts/2019-vagabonder-2/</guid>
     <description><![CDATA[바이칼 호수와 새들 바이칼 호수 곳곳에 있는 샤머니즘 기둥 바이칼 호수를 내려다보며 바이칼 호수로 가는 길 이르쿠츠크 버스 스테이션에서 바이칼 호수의 올혼섬까지는 대]]></description>
 </item>
 <item>
     <title>2019 Vagabonder 1</title>
-    <link>https://bonjune.github.io/posts/2019-vagabonder-1/</link>
+    <link>https://bongjunjang.com/posts/2019-vagabonder-1/</link>
     <pubDate>Mon, 20 Sep 2021 21:12:00 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/posts/2019-vagabonder-1/</guid>
+    <guid>https://bongjunjang.com/posts/2019-vagabonder-1/</guid>
     <description><![CDATA[기억에 남지 않는 것을 써라. &lt;타이탄의 도구들&gt; 중에서 여행을 하며 많은 사진을 남겼지만 정작 글로 남긴 것이 많이 없다. 여행을 마친지 거의 2년이 다 되]]></description>
 </item>
 <item>
     <title>쿠키런 킹덤 서버 아키텍처 3</title>
-    <link>https://bonjune.github.io/posts/cookie-run-kingdom-server-architecture-3/</link>
+    <link>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-3/</link>
     <pubDate>Tue, 31 Aug 2021 14:55:09 &#43;0900</pubDate>
     <author>Bongjun Jang</author>
-    <guid>https://bonjune.github.io/posts/cookie-run-kingdom-server-architecture-3/</guid>
+    <guid>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-3/</guid>
     <description><![CDATA[세번쨰 주제에서 함수형 프로그래밍에 대한 이야기가 눈에 띈다. 영상에서 소개되는 &lsquo;프로그램&rsquo;이라는 개념은 함수형 프로그래밍의 &l]]></description>
+</item>
+<item>
+    <title>쿠키런 킹덤 서버 아키텍처 2</title>
+    <link>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-2/</link>
+    <pubDate>Mon, 30 Aug 2021 20:19:15 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-2/</guid>
+    <description><![CDATA[이번 포스트에서 다룰 내용은 CRUD와 Event Sourcing이다. 이 주제는 데이터를 다루는 방법에 대한 이야기다. 가장 간단한 예로 은행 계좌를 관리하는 어플리케]]></description>
 </item>
 </channel>
 </rss>
