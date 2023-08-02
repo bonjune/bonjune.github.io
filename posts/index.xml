@@ -45,30 +45,6 @@
     <description><![CDATA[우리가 일상에서 겪는 모든 경제활동에서 우리는 값을 치를 때 화폐(money)를 사용한다. 맥도날드에서 햄버거를 사먹을 때, 쿠팡에서 생필품을 주문할 때, 월급]]></description>
 </item>
 <item>
-    <title>2019 Vagabonder 3</title>
-    <link>https://bongjunjang.com/posts/2019-vagabonder-3/</link>
-    <pubDate>Thu, 07 Oct 2021 17:36:51 &#43;0900</pubDate>
-    <author>Bongjun Jang</author>
-    <guid>https://bongjunjang.com/posts/2019-vagabonder-3/</guid>
-    <description><![CDATA[이르쿠츠크의 앙가라 강 이르쿠츠크의 야경 이르쿠츠크 9월 4일, 바이칼 호수 투어를 마치고 이르쿠츠크로 돌아온 승민이와 나. 에어비엔비 숙소 위치가 헷갈려서 같은]]></description>
-</item>
-<item>
-    <title>2019 Vagabonder 2</title>
-    <link>https://bongjunjang.com/posts/2019-vagabonder-2/</link>
-    <pubDate>Thu, 23 Sep 2021 15:57:31 &#43;0900</pubDate>
-    <author>Bongjun Jang</author>
-    <guid>https://bongjunjang.com/posts/2019-vagabonder-2/</guid>
-    <description><![CDATA[바이칼 호수와 새들 바이칼 호수 곳곳에 있는 샤머니즘 기둥 바이칼 호수를 내려다보며 바이칼 호수로 가는 길 이르쿠츠크 버스 스테이션에서 바이칼 호수의 올혼섬까지는 대]]></description>
-</item>
-<item>
-    <title>2019 Vagabonder 1</title>
-    <link>https://bongjunjang.com/posts/2019-vagabonder-1/</link>
-    <pubDate>Mon, 20 Sep 2021 21:12:00 &#43;0900</pubDate>
-    <author>Bongjun Jang</author>
-    <guid>https://bongjunjang.com/posts/2019-vagabonder-1/</guid>
-    <description><![CDATA[기억에 남지 않는 것을 써라. &lt;타이탄의 도구들&gt; 중에서 여행을 하며 많은 사진을 남겼지만 정작 글로 남긴 것이 많이 없다. 여행을 마친지 거의 2년이 다 되]]></description>
-</item>
-<item>
     <title>쿠키런 킹덤 서버 아키텍처 3</title>
     <link>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-3/</link>
     <pubDate>Tue, 31 Aug 2021 14:55:09 &#43;0900</pubDate>
@@ -83,6 +59,22 @@
     <author>Bongjun Jang</author>
     <guid>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-2/</guid>
     <description><![CDATA[이번 포스트에서 다룰 내용은 CRUD와 Event Sourcing이다. 이 주제는 데이터를 다루는 방법에 대한 이야기다. 가장 간단한 예로 은행 계좌를 관리하는 어플리케]]></description>
+</item>
+<item>
+    <title>쿠키런 킹덤 서버 아키텍처 1</title>
+    <link>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-1/</link>
+    <pubDate>Sun, 29 Aug 2021 12:37:24 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-1/</guid>
+    <description><![CDATA[Actor Model에 대해서 정리하며 포스트를 쓰려다가 예전에 봤던 NDC21-프로그래밍, 쿠키런 킹덤 서버 아키텍처 뜯어먹기가 떠올라서 리뷰해보려고 한다. 서버]]></description>
+</item>
+<item>
+    <title>컴퓨터와 시간</title>
+    <link>https://bongjunjang.com/posts/computer-and-time/</link>
+    <pubDate>Sat, 28 Aug 2021 12:35:23 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bongjunjang.com/posts/computer-and-time/</guid>
+    <description><![CDATA[거대한 시차 해외로 가는 비행기표를 찾아볼 때 우리는 우리의 표준시와 도착지의 표준시를 비교한다. 서울은 뉴욕보다 14시간 빠르다. 일광절약제가 적용되는 때에는]]></description>
 </item>
 </channel>
 </rss>
