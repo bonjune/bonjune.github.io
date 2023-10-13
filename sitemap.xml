@@ -2,7 +2,9 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://bongjunjang.com/</loc><lastmod>2023-08-02T12:38:07&#43;09:00</lastmod></url><url>
+            <loc>https://bongjunjang.com/</loc><lastmod>2023-10-13T18:04:48-04:00</lastmod></url><url>
+            <loc>https://bongjunjang.com/projects/breaking-extended-vigenere-cipher/</loc><lastmod>2023-10-13T18:04:48-04:00</lastmod></url><url>
+            <loc>https://bongjunjang.com/projects/</loc><lastmod>2023-10-13T18:04:48-04:00</lastmod></url><url>
             <loc>https://bongjunjang.com/tags/c/</loc><lastmod>2023-06-29T16:30:01&#43;09:00</lastmod></url><url>
             <loc>https://bongjunjang.com/posts/using-zig-with-c-1/</loc><lastmod>2023-06-29T16:30:01&#43;09:00</lastmod></url><url>
             <loc>https://bongjunjang.com/posts/</loc><lastmod>2023-06-29T16:30:01&#43;09:00</lastmod></url><url>
@@ -11,7 +13,6 @@
             <loc>https://bongjunjang.com/tags/zig/</loc><lastmod>2023-06-29T16:30:01&#43;09:00</lastmod></url><url>
             <loc>https://bongjunjang.com/posts/2023-02-01-every-new-framework-is-new-language/</loc><lastmod>2023-06-22T14:05:55&#43;09:00</lastmod></url><url>
             <loc>https://bongjunjang.com/projects/2022-10-26-reading-kens-internals/</loc><lastmod>2023-07-21T23:33:49&#43;09:00</lastmod></url><url>
-            <loc>https://bongjunjang.com/projects/</loc><lastmod>2023-07-21T23:33:49&#43;09:00</lastmod></url><url>
             <loc>https://bongjunjang.com/tags/actor-model/</loc><lastmod>2023-06-22T14:05:55&#43;09:00</lastmod></url><url>
             <loc>https://bongjunjang.com/categories/</loc><lastmod>2023-08-02T12:38:07&#43;09:00</lastmod></url><url>
             <loc>https://bongjunjang.com/categories/computer/</loc><lastmod>2023-06-22T14:05:55&#43;09:00</lastmod></url><url>

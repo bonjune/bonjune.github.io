@@ -8,7 +8,16 @@
     <language>ko</language>
     <managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
     <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster>
-    <lastBuildDate>Wed, 26 Oct 2022 12:56:00 +0900</lastBuildDate><atom:link href="https://bongjunjang.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Oct 2023 14:59:17 -0400</lastBuildDate><atom:link href="https://bongjunjang.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Breaking Extended Vigenere Cipher</title>
+      <link>https://bongjunjang.com/projects/breaking-extended-vigenere-cipher/</link>
+      <pubDate>Fri, 13 Oct 2023 14:59:17 -0400</pubDate>
+      <author>bongjun.jang@kaist.ac.kr (Bongjun Jang)</author>
+      <guid>https://bongjunjang.com/projects/breaking-extended-vigenere-cipher/</guid>
+      <description>For Appliced cryptography Course for this semester in NYU Tandon, I have been assigned a project to break a vigenere cipher but an extended version. Since I had already done a homework in KAIST, which was to write Kasiski examination program in OCaml, I thought it was going to be a piece of cake. However, the little tweak in the encryption scheme made it a lot more interesting. It was quite painful to come up with other techniques to break the cipher, but knowledges gained the hard way dies hard.</description>
+    </item>
+    
     <item>
       <title>KENS 내부 들여다보기</title>
       <link>https://bongjunjang.com/projects/2022-10-26-reading-kens-internals/</link>

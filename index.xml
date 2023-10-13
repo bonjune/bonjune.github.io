@@ -4,7 +4,7 @@
         <link>https://bongjunjang.com/</link>
         <description>Bongjun Jang&#39;s personal blog</description>
         <generator>Hugo -- gohugo.io</generator><language>ko</language><managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
-            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Thu, 29 Jun 2023 13:00:00 &#43;0900</lastBuildDate>
+            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Fri, 13 Oct 2023 14:59:17 -0400</lastBuildDate>
             <atom:link href="https://bongjunjang.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Odroid 개발보드에서 Zig와 C를 같이 사용하기</title>
