@@ -4,17 +4,9 @@
         <link>https://bongjunjang.com/</link>
         <description>Bongjun Jang&#39;s personal blog</description>
         <generator>Hugo -- gohugo.io</generator><language>ko</language><managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
-            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Mon, 16 Oct 2023 00:49:00 &#43;0000</lastBuildDate>
+            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Fri, 13 Oct 2023 14:59:17 -0400</lastBuildDate>
             <atom:link href="https://bongjunjang.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>무작위란 무엇인가?</title>
-    <link>https://bongjunjang.com/posts/what-is-random/</link>
-    <pubDate>Mon, 16 Oct 2023 00:49:00 &#43;0000</pubDate>
-    <author>Bongjun Jang</author>
-    <guid>https://bongjunjang.com/posts/what-is-random/</guid>
-    <description><![CDATA[동전을 던져 앞면과 뒷면이 나올 확률은 각각 50%라고 우리는 믿는다.]]></description>
-</item>
-<item>
     <title>Breaking Extended Vigenere Cipher</title>
     <link>https://bongjunjang.com/posts/breaking-extended-vigenere-cipher/</link>
     <pubDate>Fri, 13 Oct 2023 14:59:17 -0400</pubDate>
@@ -85,6 +77,14 @@
     <author>Bongjun Jang</author>
     <guid>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-1/</guid>
     <description><![CDATA[Actor Model에 대해서 정리하며 포스트를 쓰려다가 예전에 봤던 NDC21-프로그래밍, 쿠키런 킹덤 서버 아키텍처 뜯어먹기가 떠올라서 리뷰해보려고 한다. 서버]]></description>
+</item>
+<item>
+    <title>컴퓨터와 시간</title>
+    <link>https://bongjunjang.com/posts/computer-and-time/</link>
+    <pubDate>Sat, 28 Aug 2021 12:35:23 &#43;0900</pubDate>
+    <author>Bongjun Jang</author>
+    <guid>https://bongjunjang.com/posts/computer-and-time/</guid>
+    <description><![CDATA[거대한 시차 해외로 가는 비행기표를 찾아볼 때 우리는 우리의 표준시와 도착지의 표준시를 비교한다. 서울은 뉴욕보다 14시간 빠르다. 일광절약제가 적용되는 때에는]]></description>
 </item>
 </channel>
 </rss>
