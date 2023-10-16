@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Breaking Extended Vigenere Cipher - Bongjun Jang</title><meta name="Description" content="Bongjun Jang&#39;s personal blog"><meta property="og:title" content="Breaking Extended Vigenere Cipher" />
+<meta property="og:description" content="For Appliced cryptography Course for this semester in NYU Tandon, I have been assigned a project to break a vigenere cipher but an extended version. Since I had already done a homework in KAIST, which was to write Kasiski examination program in OCaml, I thought it was going to be a piece of cake. However, the little tweak in the encryption scheme made it a lot more interesting. It was quite painful to come up with other techniques to break the cipher, but knowledges gained the hard way dies hard." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bongjunjang.com/posts/breaking-extended-vigenere-cipher/" /><meta property="og:image" content="https://bongjunjang.com/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-10-13T14:59:17-04:00" />
+<meta property="article:modified_time" content="2023-10-16T13:45:19-04:00" /><meta property="og:site_name" content="Bongjun Jang" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://bongjunjang.com/logo.png"/>
+
+<meta name="twitter:title" content="Breaking Extended Vigenere Cipher"/>
+<meta name="twitter:description" content="For Appliced cryptography Course for this semester in NYU Tandon, I have been assigned a project to break a vigenere cipher but an extended version. Since I had already done a homework in KAIST, which was to write Kasiski examination program in OCaml, I thought it was going to be a piece of cake. However, the little tweak in the encryption scheme made it a lot more interesting. It was quite painful to come up with other techniques to break the cipher, but knowledges gained the hard way dies hard."/>
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://bongjunjang.com/posts/breaking-extended-vigenere-cipher/" /><link rel="prev" href="https://bongjunjang.com/posts/using-zig-with-c-1/" /><link rel="next" href="https://bongjunjang.com/posts/what-is-random/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Breaking Extended Vigenere Cipher",
+        "inLanguage": "ko",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/bongjunjang.com\/posts\/breaking-extended-vigenere-cipher\/"
+        },"genre": "posts","wordcount":  1595 ,
+        "url": "https:\/\/bongjunjang.com\/posts\/breaking-extended-vigenere-cipher\/","datePublished": "2023-10-13T14:59:17-04:00","dateModified": "2023-10-16T13:45:19-04:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Bongjun Jang"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Bongjun Jang">Bongjun Jang</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Posts"> Posts </a><a class="menu-item" href="/projects/" title="Projects"> Projects </a><a class="menu-item" href="/travels/" title="Travels"> Travels </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Bongjun Jang">Bongjun Jang</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="Posts">Posts</a><a class="menu-item" href="/projects/" title="Projects">Projects</a><a class="menu-item" href="/travels/" title="Travels">Travels</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Breaking Extended Vigenere Cipher</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Bongjun Jang</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-10-13">2023-10-13</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1595 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;8 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#guessing-the-key-length">Guessing the key length</a></li>
+    <li><a href="#chosen-plaintext-attack">Chosen plaintext attack</a></li>
+    <li><a href="#attacking-the-random-characters">Attacking the random characters</a></li>
+    <li><a href="#test-cases">Test cases</a></li>
+    <li><a href="#is-entropy-a-good-method">Is entropy a good method?</a></li>
+    <li><a href="#again-entropy">Again, entropy</a></li>
+    <li><a href="#fourier-transform">Fourier Transform</a></li>
+    <li><a href="#result-1">Result 1</a></li>
+    <li><a href="#going-further">Going further</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>For Appliced cryptography Course for this semester in NYU Tandon,
+I have been assigned a project to break a vigenere cipher but an extended version.
+Since I had already done a homework in KAIST, which was to write Kasiski examination program in OCaml,
+I thought it was going to be a piece of cake. However, the little tweak in the encryption scheme made it a lot more interesting.
+It was quite painful to come up with other techniques to break the cipher, but knowledges gained the hard way dies hard.
+And I want to share my thought process!</p>
+<p>The cryptanalysis program I had to write has access to information below:</p>
+<ol>
+<li>The ciphertext</li>
+<li>The (partial) knowledge of the encryption scheme</li>
+<li>A set of plaintexts</li>
+</ol>
+<p>The extension of Vigenere cipher is that a pseudo-random character can be inserted at a random location in the ciphertext,
+with a known probability.
+And other encryption process was exactly the same as the Vigenere cipher.
+For example, each character in the ciphertext has a 5% chance of being a random character.</p>
+<h2 id="guessing-the-key-length">Guessing the key length</h2>
+<p>Guessing a key length in Vigenere cipher is a well-known attack.
+Kasiski examination and index of coincidence are two of the most famous techniques.
+Since I had an experience of writing a Kasiski examination program in OCaml, I thought it would be a good idea to try it first.
+But it turned out that Kasiski examination can&rsquo;t perform well to this case.
+The random character extension was enough to make the guess fail.</p>
+<p>Similarly, index of coincidence also failed to guess the key length, probably with a similar reason. So I had to come up with another idea.</p>
+<h2 id="chosen-plaintext-attack">Chosen plaintext attack</h2>
+<p>Attacking a key length was inherently difficult because it only uses the ciphertext and the knowledge of the encryption scheme.
+However, if you look closely to the information you can access, you will find that you can actually use the plaintexts as well.</p>
+<p>In modern cipher, having access to plaintexts is not a big deal because the encryption scheme is designed to be secure even if the attacker has access to plaintexts, proven by the computational indistinguishability.</p>
+<p>But, in this scheme, the encryption is too weak to be attacked by the chosen plaintext attack. This first thing I tried was to <strong>substract the ciphertext by a plaintext</strong>. Since it is poly-alphabetic substitution cipher, the result of the substraction will be a key stream. If you get the key, you just decrypt the whole ciphertext, right?</p>
+<p>The example below shows the result of substraction of ciphertext by plaintexts.
+The repeating <code>2, 3, 4, 1</code> cleary shows that that is the key.</p>
+<pre tabindex="0"><code>C: [4, 4, 22, 14, 11, 8, 23, 21, 2, 11, 5, 20, 22, 8, 23, 1, 21, 19, 5, 5]
+P: [2, 1, 18, 13, 9, 5, 19, 20, 0, 8, 1, 19, 20, 5, 19, 0, 19, 16, 1, 4]
+D: [2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1]
+</code></pre><p>But this example is more interesting: there is no repeating pattern in the difference.
+But if you remove the 4-th character (0-based) in the ciphertext, you can see the repeating pattern.
+We now can tell that is the random character inserted!</p>
+<pre tabindex="0"><code>C: [6, 8, 18, 22, 11, 16, 6, 13, 2, 22, 12, 13, 19, 15, 2, 6, 12, 19, 17, 14]
+P: [4, 5, 14, 21, 14, 3, 9, 1, 20, 9, 15, 14, 0, 3, 8, 18, 15, 14, 1, 24]
+D: [2, 3, 4, 1, 24, 13, 24, 12, 9, 13, 24, 26, 19, 12, 21, 15, 24, 5, 16, 17]
+</code></pre><h2 id="attacking-the-random-characters">Attacking the random characters</h2>
+<p>Thus, if we are able to tell whether a character is a random character or not, it is now so trivial to decrypt the ciphertext.
+Then how can we tell that?</p>
+<p>I used two methods for the question:</p>
+<ol>
+<li>Information Entropy, and</li>
+<li>Fourier Transform</li>
+</ol>
+<p>Information entropy is a measure of the randomness, or the uncertainty of a random variable.
+The higher the entropy is, the more random the variable is (it gets harder to tell outcome of the next event.)
+Therefore, if we remove the random characters, the entropy of the ciphertext will decrease.</p>
+<p>And Fourier Transform is a method to decompose a signal into its frequency components.
+Looking at the frequency components of the ciphertext, we can tell whether removing characters reveals a
+periodic pattern or not. (A key is used repeatedly in Vigenere cipher)</p>
+<p>Now we have ideas. And it&rsquo;s time to demonstrate them!</p>
+<h2 id="test-cases">Test cases</h2>
+<p>To prove our idea is valid, I needed to test it with some test cases.
+To generate test cases, I wrote a Python program that generates ciphertexts from a set of plaintexts, with an input key.
+Surely, it insertes random characters with a given probability.</p>
+<p>For keys of length 4~24 (inclusive), I generated 5 ciphertexts for each key length,,
+since the number of plaintexts in the set is 5.
+That is, i-th ciphertext of key length k is encrypted from i-th plaintext of the set.</p>
+<h2 id="is-entropy-a-good-method">Is entropy a good method?</h2>
+<figure><img src="entropy_plot_30.png"/><figcaption>
+            <h4>entropy test with N=30 and std multiplier of 0.186</h4>
+        </figcaption>
+</figure>
+
+<p>The plot shows how many cases can be guessed correctly measuring entropy.
+For each difference (substration of ciphertext to plaintext), I calculated entropy of the difference of the first 30(N) characters.
+I only calculated ones of the first ones because the characters are likely to be random characters as it is placed at the rear part of the ciphertext.</p>
+<p>And for each ciphertext, I measured entropy to each plaintext, and picked the one with the lowest entropy,
+if it is significantly lower than the others.
+For the significance, I used mean and standard deviation.
+A difference whose entropy is lowerthan <code>mean - multiplier * std</code> is considered to be significantly lower.</p>
+<p>The multiplier is chosen to be 0.186, because it eliminates all false positive cases.</p>
+<p>Just using entropy, we decrypted 16 cases of 105, which was interesting.
+But it was not enough to decrypt all the cases!
+The failing cases are due to random characters at the beginning of a ciphertext,
+because it increases entropies of all the differences derived from the ciphertext.</p>
+<p>Then we needed to find a way to eliminate the random characters at the beginning of a ciphertext.</p>
+<h2 id="again-entropy">Again, entropy</h2>
+<p>So, to recover the repeating pattern in the difference, I used again entropy!
+A simple idea that if a random character is removed entropy will decrease is used here.</p>
+<figure><img src="entropy_and_removal_entropy.png"/><figcaption>
+            <h4>just entropy test, and entropy change with a character removed</h4>
+        </figcaption>
+</figure>
+
+<p>The left plot shows that mere entropy test does not tell anything about the entropy here.
+(The correct answer is 3, but the entropy of that one is the largest!)
+But the test fails because we set the multiplier not to accept this result.</p>
+<p>The right plot shows how entropy changes if i-th character is removed.
+We can observe a V-shaped local minimum around the correct answer, which removes 8-th character.</p>
+<p>Removing characters at the local minima, we might reveal the hidden repeating pattern.
+But we need more evidence the numbers are repeating or not.</p>
+<h2 id="fourier-transform">Fourier Transform</h2>
+<figure><img src="fft-pattern.png"/><figcaption>
+            <h4>Fourier Transform of the difference</h4>
+        </figcaption>
+</figure>
+
+<p>This figure shows magnitudes of Fourier Transform computed on the difference which shows the repeating pattern.
+You see how many zero-magnitude frequencies are there in the plot?
+I don&rsquo;t know how Fourier Transform works, but it was a clear pattern when the difference has a repeating pattern.</p>
+<h2 id="result-1">Result 1</h2>
+<p>So the pipeline now looks like this:</p>
+<ol>
+<li>Run entropy test to see if there is a significantly low entropy.</li>
+<li>If not, try removing a character with entropy change and run FFT test.</li>
+<li>If failed to find a repeating pattern, just pick the one with the lowest entropy.</li>
+</ol>
+<figure><img src="result1.png"/>
+</figure>
+
+<p>It now correctly decrypts 47.62 percent of all test cases just in 100 miliseconds. Looks good!
+But, I wanted to go further.</p>
+<h2 id="going-further">Going further</h2>
+<p>After looking at failing cases, I found that if there are more than two random characters inserted,
+the method has no way to decrypt the ciphertext.
+So I allowed the program to remove 2~4 characters, only if the entropy change is significant.</p>
+<p>When I allowed removing 4 characters, the program started to suffer from poor performance.
+Scrutinizing the algorithm used, I found that computing differences was a performance bottleneck.
+But I realized from the removed ciphertext and palintexts can be precomputed.
+Since removing a character shifts all the characters after, the difference can be computed by just removing the first character.
+The difference contains difference we looking for. Now all we have to do is just taking a slice of it.</p>
+<p>So the additional test layer is added to the pipeline:</p>
+<p>For the first 48 characters of the ciphertext (which is the minimum length for the repeating pattern to appear even for the longest key length, or 24), run entropy test to ciphertexts with 2~4 characters removed.
+If there is a significantly low entropy, run FFT test.</p>
+<p>Now the result is more satisfactory.</p>
+<figure><img src="result2.png"/>
+</figure>
+
+<p>It correctly decrypts 63.81% of all test cases with maximum 17s running time.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>I have demonstrated how to break an extended Vigenere cipher with a chosen plaintext attack.
+The idea was to use entropy and Fourier Transform to find a repeating pattern in the difference of ciphertext and plaintext.
+The program I wrote correctly decrypts 63.81% of all test cases with maximum 17s running time on my laptop.</p>
+<p>I explored the notion of entropy and Fourier Transform,
+and skills to improve performance of a program by precomputation (nice refresh for performance optimization!)</p>
+<p>The full report can be found here: <a href="https://docs.google.com/document/d/e/2PACX-1vTomgI21nstUMmi3HSI8N7bbqmHNSCSRXoyfFq23_fWK5_f9VmcmNwj4pe22cFeR562FZ2lhKqt_S-B/pub" target="_blank" rel="noopener noreffer ">https://docs.google.com/document/d/e/2PACX-1vTomgI21nstUMmi3HSI8N7bbqmHNSCSRXoyfFq23_fWK5_f9VmcmNwj4pe22cFeR562FZ2lhKqt_S-B/pub</a></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-10-16&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/85f98e35afdee71392539e0de5e0b38fd213ed59" target="_blank" title="commit by Bongjun Jang(bongjun.jang@kaist.ac.kr) 85f98e35afdee71392539e0de5e0b38fd213ed59: move project post to just posts">
+                                    <i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>85f98e3</a></span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://bongjunjang.com/posts/breaking-extended-vigenere-cipher/" data-title="Breaking Extended Vigenere Cipher"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://bongjunjang.com/posts/breaking-extended-vigenere-cipher/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://bongjunjang.com/posts/breaking-extended-vigenere-cipher/" data-title="Breaking Extended Vigenere Cipher"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://bongjunjang.com/posts/breaking-extended-vigenere-cipher/" data-title="Breaking Extended Vigenere Cipher"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://bongjunjang.com/posts/breaking-extended-vigenere-cipher/" data-title="Breaking Extended Vigenere Cipher"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/using-zig-with-c-1/" class="prev" rel="prev" title="Odroid 개발보드에서 Zig와 C를 같이 사용하기"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Odroid 개발보드에서 Zig와 C를 같이 사용하기</a>
+            <a href="/posts/what-is-random/" class="next" rel="next" title="무작위란 무엇인가?">무작위란 무엇인가?<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.115.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Bongjun Jang</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false}};</script><script type="text/javascript" src="/js/theme.min.b0df51c2c57145081cc73960e9aa780e6f5f56d06cf4ef0f96da8ce1619d1e12.js" integrity="sha256-sN9RwsVxRQgcxzlg6ap4Dm9fVtBs9O8PltqM4WGdHhI="></script></body>
+</html>
