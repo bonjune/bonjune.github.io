@@ -1,16 +1,25 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>event-sourcing - Tag - Bongjun Jang</title>
-        <link>https://bongjunjang.com/tags/event-sourcing/</link>
-        <description>event-sourcing - Tag - Bongjun Jang</description>
-        <generator>Hugo -- gohugo.io</generator><language>ko</language><managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
-            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Mon, 30 Aug 2021 20:19:15 &#43;0900</lastBuildDate><atom:link href="https://bongjunjang.com/tags/event-sourcing/" rel="self" type="application/rss+xml" /><item>
-    <title>쿠키런 킹덤 서버 아키텍처 2</title>
-    <link>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-2/</link>
-    <pubDate>Mon, 30 Aug 2021 20:19:15 &#43;0900</pubDate>
-    <author>Bongjun Jang</author>
-    <guid>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-2/</guid>
-    <description><![CDATA[이번 포스트에서 다룰 내용은 CRUD와 Event Sourcing이다. 이 주제는 데이터를 다루는 방법에 대한 이야기다. 가장 간단한 예로 은행 계좌를 관리하는 어플리케]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>event-sourcing on Bongjun Jang</title>
+    <link>https://bongjunjang.com/tags/event-sourcing/</link>
+    <description>Recent content in event-sourcing on Bongjun Jang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
+    <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster>
+    <lastBuildDate>Mon, 30 Aug 2021 20:19:15 +0900</lastBuildDate><atom:link href="https://bongjunjang.com/tags/event-sourcing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>쿠키런 킹덤 서버 아키텍처 2</title>
+      <link>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-2/</link>
+      <pubDate>Mon, 30 Aug 2021 20:19:15 +0900</pubDate>
+      <author>bongjun.jang@kaist.ac.kr (Bongjun Jang)</author>
+      <guid>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-2/</guid>
+      <description>이번 포스트에서 다룰 내용은 CRUD와 Event Sourcing이다. 이 주제는 데이터를 다루는 방법에 대한 이야기다.
+가장 간단한 예로 은행 계좌를 관리하는 어플리케이션을 생각해보자. 은행 계좌는 잔액를 관리해야하며 계좌 간의 송금 기능을 구현해야 한다. 이를 CRUD와 Event Sourcing으로 각각 구현해보자.
+CRUD CRUD는 Create, Read, Update and Delete의 약어로 데이터를 생성하고 읽고 수정하고 삭제하는 기능을 말한다. F#으로 CRUD를 나타내보면 다음과 같은 코드로 나타낼 수 있을 것이다.
+// 1. Create let mutable account = BankAccount(500) // 2.</description>
+    </item>
+    
+  </channel>
 </rss>

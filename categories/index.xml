@@ -1,40 +1,49 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Categories - Category - Bongjun Jang</title>
-        <link>https://bongjunjang.com/categories/</link>
-        <description>Categories - Category - Bongjun Jang</description>
-        <generator>Hugo -- gohugo.io</generator><language>ko</language><managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
-            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Mon, 29 Nov 2021 08:54:51 &#43;0900</lastBuildDate><atom:link href="https://bongjunjang.com/categories/" rel="self" type="application/rss+xml" /><item>
-    <title>computer</title>
-    <link>https://bongjunjang.com/categories/computer/</link>
-    <pubDate>Mon, 29 Nov 2021 08:54:51 &#43;0900</pubDate>
-    <author>Bongjun Jang</author>
-    <guid>https://bongjunjang.com/categories/computer/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>knowledge</title>
-    <link>https://bongjunjang.com/categories/knowledge/</link>
-    <pubDate>Mon, 22 Nov 2021 21:23:00 &#43;0900</pubDate>
-    <author>Bongjun Jang</author>
-    <guid>https://bongjunjang.com/categories/knowledge/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>vegabonder</title>
-    <link>https://bongjunjang.com/categories/vegabonder/</link>
-    <pubDate>Thu, 07 Oct 2021 17:36:51 &#43;0900</pubDate>
-    <author>Bongjun Jang</author>
-    <guid>https://bongjunjang.com/categories/vegabonder/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>vagabonder</title>
-    <link>https://bongjunjang.com/categories/vagabonder/</link>
-    <pubDate>Thu, 23 Sep 2021 15:57:31 &#43;0900</pubDate>
-    <author>Bongjun Jang</author>
-    <guid>https://bongjunjang.com/categories/vagabonder/</guid>
-    <description><![CDATA[]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Bongjun Jang</title>
+    <link>https://bongjunjang.com/categories/</link>
+    <description>Recent content in Categories on Bongjun Jang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
+    <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster>
+    <lastBuildDate>Mon, 29 Nov 2021 08:54:51 +0900</lastBuildDate><atom:link href="https://bongjunjang.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>computer</title>
+      <link>https://bongjunjang.com/categories/computer/</link>
+      <pubDate>Mon, 29 Nov 2021 08:54:51 +0900</pubDate>
+      <author>bongjun.jang@kaist.ac.kr (Bongjun Jang)</author>
+      <guid>https://bongjunjang.com/categories/computer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>knowledge</title>
+      <link>https://bongjunjang.com/categories/knowledge/</link>
+      <pubDate>Mon, 22 Nov 2021 21:23:00 +0900</pubDate>
+      <author>bongjun.jang@kaist.ac.kr (Bongjun Jang)</author>
+      <guid>https://bongjunjang.com/categories/knowledge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vegabonder</title>
+      <link>https://bongjunjang.com/categories/vegabonder/</link>
+      <pubDate>Thu, 07 Oct 2021 17:36:51 +0900</pubDate>
+      <author>bongjun.jang@kaist.ac.kr (Bongjun Jang)</author>
+      <guid>https://bongjunjang.com/categories/vegabonder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vagabonder</title>
+      <link>https://bongjunjang.com/categories/vagabonder/</link>
+      <pubDate>Thu, 23 Sep 2021 15:57:31 +0900</pubDate>
+      <author>bongjun.jang@kaist.ac.kr (Bongjun Jang)</author>
+      <guid>https://bongjunjang.com/categories/vagabonder/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
 </rss>

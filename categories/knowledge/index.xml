@@ -1,24 +1,33 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>knowledge - Category - Bongjun Jang</title>
-        <link>https://bongjunjang.com/categories/knowledge/</link>
-        <description>knowledge - Category - Bongjun Jang</description>
-        <generator>Hugo -- gohugo.io</generator><language>ko</language><managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
-            <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster><lastBuildDate>Mon, 22 Nov 2021 21:23:00 &#43;0900</lastBuildDate><atom:link href="https://bongjunjang.com/categories/knowledge/" rel="self" type="application/rss+xml" /><item>
-    <title>비트코인을 지탱하는 원동력</title>
-    <link>https://bongjunjang.com/posts/what-runs-bitcoin-network/</link>
-    <pubDate>Mon, 22 Nov 2021 21:23:00 &#43;0900</pubDate>
-    <author>Bongjun Jang</author>
-    <guid>https://bongjunjang.com/posts/what-runs-bitcoin-network/</guid>
-    <description><![CDATA[비트코인으로 대표되는 블록체인은 집중형 시스템과는 확실히 차별점이 있는 방식이다. 전통적인 방식에서는 모든 데이터를 저장하는 서버가 있고 클라이언트들의 요청]]></description>
-</item>
-<item>
-    <title>베이비 시팅 쿠폰 실험</title>
-    <link>https://bongjunjang.com/posts/baby-sitting-coupon-experiment/</link>
-    <pubDate>Wed, 17 Nov 2021 15:53:34 &#43;0900</pubDate>
-    <author>Bongjun Jang</author>
-    <guid>https://bongjunjang.com/posts/baby-sitting-coupon-experiment/</guid>
-    <description><![CDATA[우리가 일상에서 겪는 모든 경제활동에서 우리는 값을 치를 때 화폐(money)를 사용한다. 맥도날드에서 햄버거를 사먹을 때, 쿠팡에서 생필품을 주문할 때, 월급]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>knowledge on Bongjun Jang</title>
+    <link>https://bongjunjang.com/categories/knowledge/</link>
+    <description>Recent content in knowledge on Bongjun Jang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
+    <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster>
+    <lastBuildDate>Mon, 22 Nov 2021 21:23:00 +0900</lastBuildDate><atom:link href="https://bongjunjang.com/categories/knowledge/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>비트코인을 지탱하는 원동력</title>
+      <link>https://bongjunjang.com/posts/what-runs-bitcoin-network/</link>
+      <pubDate>Mon, 22 Nov 2021 21:23:00 +0900</pubDate>
+      <author>bongjun.jang@kaist.ac.kr (Bongjun Jang)</author>
+      <guid>https://bongjunjang.com/posts/what-runs-bitcoin-network/</guid>
+      <description>비트코인으로 대표되는 블록체인은 집중형 시스템과는 확실히 차별점이 있는 방식이다. 전통적인 방식에서는 모든 데이터를 저장하는 서버가 있고 클라이언트들의 요청을 알맞게 처리해 서버가 데이터를 제공했다. 하지만 블록체인에서는 데이터가 네트워크 참여자들에게 모두 분산되어 저장된다. (분산 원장, Distributed Ledger) 또한 데이터는 P2P(peer-to-peer) 형식으로 공유된다.
+이런 점 때문에 비트코인은 비트토렌트와 닮았다. 중앙 서버 없이 네트워크 참여자들끼리(peer-to-peer) 데이터가 공유되며, 네트워크 참여자들의 노력을 통해 네트워크가 유지되기 때문이다.
+하지만 비트토렌트와 비트코인 사이에는 결정적인 차이점이 있다. 비트코인은 네트워크 참가자들에게 인센티브를 제공하지만 비트토렌트는 그렇지 않다는 점이다.</description>
+    </item>
+    
+    <item>
+      <title>베이비 시팅 쿠폰 실험</title>
+      <link>https://bongjunjang.com/posts/baby-sitting-coupon-experiment/</link>
+      <pubDate>Wed, 17 Nov 2021 15:53:34 +0900</pubDate>
+      <author>bongjun.jang@kaist.ac.kr (Bongjun Jang)</author>
+      <guid>https://bongjunjang.com/posts/baby-sitting-coupon-experiment/</guid>
+      <description>우리가 일상에서 겪는 모든 경제활동에서 우리는 값을 치를 때 화폐(money)를 사용한다. 맥도날드에서 햄버거를 사먹을 때, 쿠팡에서 생필품을 주문할 때, 월급을 받을 때, 용돈을 받을 때 화폐를 사용하지 않는 곳이 없다. 우리가 거래를 할 때 사용되는 모든 것들을 화폐로 본다면 KRW, USD, EUR와 같이 일반적으로 떠오르는 종이화폐 외에도 금이나 은, 암호화폐 등 모든 것이 화폐가 될 수 있다. 역사를 보면 전쟁이나 대공황 같은 때에는 응급약품, 술, 마약, 간편식품(라면 등), 물이 화폐로 기능하기도 했다.</description>
+    </item>
+    
+  </channel>
 </rss>
