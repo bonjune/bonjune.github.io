@@ -6,7 +6,18 @@
     <description>Recent content on Bongjun Jang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Fri, 13 Oct 2023 14:59:17 -0400</lastBuildDate><atom:link href="https://bongjunjang.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Dec 2023 12:01:29 -0500</lastBuildDate><atom:link href="https://bongjunjang.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>이유를 찾지 말라</title>
+      <link>https://bongjunjang.com/posts/%EC%9D%B4%EC%9C%A0%EB%A5%BC-%EC%B0%BE%EC%A7%80-%EB%A7%90%EB%9D%BC/</link>
+      <pubDate>Sat, 02 Dec 2023 12:01:29 -0500</pubDate>
+      
+      <guid>https://bongjunjang.com/posts/%EC%9D%B4%EC%9C%A0%EB%A5%BC-%EC%B0%BE%EC%A7%80-%EB%A7%90%EB%9D%BC/</guid>
+      <description>내가 왜 공부를 하고 있는거지? 내가 왜 이걸 준비하고 있지?
+자기를 찾기 위한 중요한 질문이지만 이런 질문에는 명확한 답이 없다. 질문을 깊은 곳까지 파고들면 누구도 명쾌한 증명을 내놓을 수 없는 공허를 만나게 된다.
+자기 최면을 통해 내가 하고 있는 일을 내가 진정으로 사랑한다고 스스로에게 다짐하는 것이 필요한 순간이다. 나의 모든 순간은 내가 의미를 부여하는 대로 흘러간다.</description>
+    </item>
+    
     <item>
       <title>Breaking Extended Vigenere Cipher</title>
       <link>https://bongjunjang.com/posts/breaking-extended-vigenere-cipher/</link>
