@@ -84,10 +84,25 @@ Surely, it insertes random characters with a given probability.</p>
 since the number of plaintexts in the set is 5.
 That is, i-th ciphertext of key length k is encrypted from i-th plaintext of the set.</p>
 <h2 id="is-entropy-a-good-method">Is entropy a good method?</h2>
-<figure><img src="entropy_plot_30.png"/><figcaption>
-            <h4>entropy test with N=30 and std multiplier of 0.186</h4>
-        </figcaption>
+   
+<figure>
+  <div>
+    <img
+      srcset='
+                /posts/breaking-extended-vigenere-cipher/entropy_plot_30_hua6c7780057ac03b91ed3f84e61ad3a49_484661_320x0_resize_box_3.png 320w,
+                /posts/breaking-extended-vigenere-cipher/entropy_plot_30_hua6c7780057ac03b91ed3f84e61ad3a49_484661_600x0_resize_box_3.png 600w,
+                /posts/breaking-extended-vigenere-cipher/entropy_plot_30_hua6c7780057ac03b91ed3f84e61ad3a49_484661_900x0_resize_box_3.png 900w,
+                /posts/breaking-extended-vigenere-cipher/entropy_plot_30_hua6c7780057ac03b91ed3f84e61ad3a49_484661_1200x0_resize_box_3.png 1200x'
+      sizes="(max-width: 320px) 280px, (max-width: 600px) 560px, 800px"
+      src='/posts/breaking-extended-vigenere-cipher/entropy_plot_30_hua6c7780057ac03b91ed3f84e61ad3a49_484661_600x0_resize_box_3.png'
+      alt=""
+    />
+  </div>
+  <figcaption>
+    <p></p>
+  </figcaption>
 </figure>
+
 
 <p>The plot shows how many cases can be guessed correctly measuring entropy.
 For each difference (substration of ciphertext to plaintext), I calculated entropy of the difference of the first 30(N) characters.
@@ -105,10 +120,25 @@ because it increases entropies of all the differences derived from the ciphertex
 <h2 id="again-entropy">Again, entropy</h2>
 <p>So, to recover the repeating pattern in the difference, I used again entropy!
 A simple idea that if a random character is removed entropy will decrease is used here.</p>
-<figure><img src="entropy_and_removal_entropy.png"/><figcaption>
-            <h4>just entropy test, and entropy change with a character removed</h4>
-        </figcaption>
+   
+<figure>
+  <div>
+    <img
+      srcset='
+                /posts/breaking-extended-vigenere-cipher/entropy_and_removal_entropy_hu06a1c0d6e12357110f9bb1433b2cadfe_38939_320x0_resize_box_3.png 320w,
+                /posts/breaking-extended-vigenere-cipher/entropy_and_removal_entropy_hu06a1c0d6e12357110f9bb1433b2cadfe_38939_600x0_resize_box_3.png 600w,
+                /posts/breaking-extended-vigenere-cipher/entropy_and_removal_entropy_hu06a1c0d6e12357110f9bb1433b2cadfe_38939_900x0_resize_box_3.png 900w,
+                /posts/breaking-extended-vigenere-cipher/entropy_and_removal_entropy_hu06a1c0d6e12357110f9bb1433b2cadfe_38939_1200x0_resize_box_3.png 1200x'
+      sizes="(max-width: 320px) 280px, (max-width: 600px) 560px, 800px"
+      src='/posts/breaking-extended-vigenere-cipher/entropy_and_removal_entropy_hu06a1c0d6e12357110f9bb1433b2cadfe_38939_600x0_resize_box_3.png'
+      alt=""
+    />
+  </div>
+  <figcaption>
+    <p></p>
+  </figcaption>
 </figure>
+
 
 <p>The left plot shows that mere entropy test does not tell anything about the entropy here.
 (The correct answer is 3, but the entropy of that one is the largest!)
@@ -118,10 +148,25 @@ We can observe a V-shaped local minimum around the correct answer, which removes
 <p>Removing characters at the local minima, we might reveal the hidden repeating pattern.
 But we need more evidence the numbers are repeating or not.</p>
 <h2 id="fourier-transform">Fourier Transform</h2>
-<figure><img src="fft-pattern.png"/><figcaption>
-            <h4>Fourier Transform of the difference</h4>
-        </figcaption>
+   
+<figure>
+  <div>
+    <img
+      srcset='
+                /posts/breaking-extended-vigenere-cipher/fft-pattern_hu82d360cfdbb2298e569c7d76fd4efdb5_9154_320x0_resize_box_3.png 320w,
+                /posts/breaking-extended-vigenere-cipher/fft-pattern_hu82d360cfdbb2298e569c7d76fd4efdb5_9154_600x0_resize_box_3.png 600w,
+                /posts/breaking-extended-vigenere-cipher/fft-pattern_hu82d360cfdbb2298e569c7d76fd4efdb5_9154_900x0_resize_box_3.png 900w,
+                /posts/breaking-extended-vigenere-cipher/fft-pattern_hu82d360cfdbb2298e569c7d76fd4efdb5_9154_1200x0_resize_box_3.png 1200x'
+      sizes="(max-width: 320px) 280px, (max-width: 600px) 560px, 800px"
+      src='/posts/breaking-extended-vigenere-cipher/fft-pattern_hu82d360cfdbb2298e569c7d76fd4efdb5_9154_600x0_resize_box_3.png'
+      alt=""
+    />
+  </div>
+  <figcaption>
+    <p></p>
+  </figcaption>
 </figure>
+
 
 <p>This figure shows magnitudes of Fourier Transform computed on the difference which shows the repeating pattern.
 You see how many zero-magnitude frequencies are there in the plot?
@@ -133,8 +178,25 @@ I don&rsquo;t know how Fourier Transform works, but it was a clear pattern when 
 <li>If not, try removing a character with entropy change and run FFT test.</li>
 <li>If failed to find a repeating pattern, just pick the one with the lowest entropy.</li>
 </ol>
-<figure><img src="result1.png"/>
+   
+<figure>
+  <div>
+    <img
+      srcset='
+                /posts/breaking-extended-vigenere-cipher/result1_hu8c95ba5131d2c5fb140f2ee797c792f0_51438_320x0_resize_box_3.png 320w,
+                /posts/breaking-extended-vigenere-cipher/result1_hu8c95ba5131d2c5fb140f2ee797c792f0_51438_600x0_resize_box_3.png 600w,
+                /posts/breaking-extended-vigenere-cipher/result1_hu8c95ba5131d2c5fb140f2ee797c792f0_51438_900x0_resize_box_3.png 900w,
+                /posts/breaking-extended-vigenere-cipher/result1_hu8c95ba5131d2c5fb140f2ee797c792f0_51438_1200x0_resize_box_3.png 1200x'
+      sizes="(max-width: 320px) 280px, (max-width: 600px) 560px, 800px"
+      src='/posts/breaking-extended-vigenere-cipher/result1_hu8c95ba5131d2c5fb140f2ee797c792f0_51438_600x0_resize_box_3.png'
+      alt=""
+    />
+  </div>
+  <figcaption>
+    <p></p>
+  </figcaption>
 </figure>
+
 
 <p>It now correctly decrypts 47.62 percent of all test cases just in 100 miliseconds. Looks good!
 But, I wanted to go further.</p>
@@ -151,8 +213,25 @@ The difference contains difference we looking for. Now all we have to do is just
 <p>For the first 48 characters of the ciphertext (which is the minimum length for the repeating pattern to appear even for the longest key length, or 24), run entropy test to ciphertexts with 2~4 characters removed.
 If there is a significantly low entropy, run FFT test.</p>
 <p>Now the result is more satisfactory.</p>
-<figure><img src="result2.png"/>
+   
+<figure>
+  <div>
+    <img
+      srcset='
+                /posts/breaking-extended-vigenere-cipher/result2_hu8534ec92f9b9164d2a49d124f5102a05_51549_320x0_resize_box_3.png 320w,
+                /posts/breaking-extended-vigenere-cipher/result2_hu8534ec92f9b9164d2a49d124f5102a05_51549_600x0_resize_box_3.png 600w,
+                /posts/breaking-extended-vigenere-cipher/result2_hu8534ec92f9b9164d2a49d124f5102a05_51549_900x0_resize_box_3.png 900w,
+                /posts/breaking-extended-vigenere-cipher/result2_hu8534ec92f9b9164d2a49d124f5102a05_51549_1200x0_resize_box_3.png 1200x'
+      sizes="(max-width: 320px) 280px, (max-width: 600px) 560px, 800px"
+      src='/posts/breaking-extended-vigenere-cipher/result2_hu8534ec92f9b9164d2a49d124f5102a05_51549_600x0_resize_box_3.png'
+      alt=""
+    />
+  </div>
+  <figcaption>
+    <p></p>
+  </figcaption>
 </figure>
+
 
 <p>It correctly decrypts 63.81% of all test cases with maximum 17s running time.</p>
 <h2 id="conclusion">Conclusion</h2>
