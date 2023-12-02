@@ -6,14 +6,12 @@
     <description>Recent content in backend on Bongjun Jang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
-    <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster>
     <lastBuildDate>Sun, 29 Aug 2021 12:37:24 +0900</lastBuildDate><atom:link href="https://bongjunjang.com/tags/backend/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>쿠키런 킹덤 서버 아키텍처 1</title>
       <link>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-1/</link>
       <pubDate>Sun, 29 Aug 2021 12:37:24 +0900</pubDate>
-      <author>bongjun.jang@kaist.ac.kr (Bongjun Jang)</author>
+      
       <guid>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-1/</guid>
       <description>Actor Model에 대해서 정리하며 포스트를 쓰려다가 예전에 봤던 NDC21-프로그래밍, 쿠키런 킹덤 서버 아키텍처 뜯어먹기가 떠올라서 리뷰해보려고 한다. 서버 아키텍처에 대해 많은 내용을 배울 수 있는 자료라서 좋은 공부가 될 것 같다.
 일단 영상의 주요 내용은 다음과 같다. (영상 1분 16초 참고)

@@ -6,14 +6,12 @@
     <description>Recent content in actor model on Bongjun Jang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
-    <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster>
     <lastBuildDate>Mon, 29 Nov 2021 08:54:51 +0900</lastBuildDate><atom:link href="https://bongjunjang.com/tags/actor-model/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>액터 모델 실습</title>
       <link>https://bongjunjang.com/posts/actor-model-in-practice/</link>
       <pubDate>Mon, 29 Nov 2021 08:54:51 +0900</pubDate>
-      <author>bongjun.jang@kaist.ac.kr (Bongjun Jang)</author>
+      
       <guid>https://bongjunjang.com/posts/actor-model-in-practice/</guid>
       <description>Elixir Programming Language
 요즘 나의 프로그래밍 공부는 Elixir를 공부하는 데 치중되어 있다. Elixir는 강타입(Strongly typed), 동적타입(Dynamically typed), 함수형(Functional) 프로그래밍 언어다. 컴파일(elixirc) 뿐 아니라 인터랙티브 쉘(iex)과 스크립팅(exs)도 지원하기 때문에 함수형 언어인 것만 제외하면 파이썬이나 루비와 같은 스크립트 언어처럼 사용할 수 있다. 실제로 문법도 루비와 매우 흡사하기 때문에 파이썬이나 루비를 배웠던 사람이라면 큰 어려움없이 흡수할 수 있다.

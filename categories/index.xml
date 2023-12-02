@@ -6,14 +6,12 @@
     <description>Recent content in Categories on Bongjun Jang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <managingEditor>bongjun.jang@kaist.ac.kr (Bongjun Jang)</managingEditor>
-    <webMaster>bongjun.jang@kaist.ac.kr (Bongjun Jang)</webMaster>
     <lastBuildDate>Mon, 29 Nov 2021 08:54:51 +0900</lastBuildDate><atom:link href="https://bongjunjang.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>computer</title>
       <link>https://bongjunjang.com/categories/computer/</link>
       <pubDate>Mon, 29 Nov 2021 08:54:51 +0900</pubDate>
-      <author>bongjun.jang@kaist.ac.kr (Bongjun Jang)</author>
+      
       <guid>https://bongjunjang.com/categories/computer/</guid>
       <description></description>
     </item>
@@ -22,7 +20,7 @@
       <title>knowledge</title>
       <link>https://bongjunjang.com/categories/knowledge/</link>
       <pubDate>Mon, 22 Nov 2021 21:23:00 +0900</pubDate>
-      <author>bongjun.jang@kaist.ac.kr (Bongjun Jang)</author>
+      
       <guid>https://bongjunjang.com/categories/knowledge/</guid>
       <description></description>
     </item>
@@ -31,7 +29,7 @@
       <title>vegabonder</title>
       <link>https://bongjunjang.com/categories/vegabonder/</link>
       <pubDate>Thu, 07 Oct 2021 17:36:51 +0900</pubDate>
-      <author>bongjun.jang@kaist.ac.kr (Bongjun Jang)</author>
+      
       <guid>https://bongjunjang.com/categories/vegabonder/</guid>
       <description></description>
     </item>
@@ -40,7 +38,7 @@
       <title>vagabonder</title>
       <link>https://bongjunjang.com/categories/vagabonder/</link>
       <pubDate>Thu, 23 Sep 2021 15:57:31 +0900</pubDate>
-      <author>bongjun.jang@kaist.ac.kr (Bongjun Jang)</author>
+      
       <guid>https://bongjunjang.com/categories/vagabonder/</guid>
       <description></description>
     </item>
