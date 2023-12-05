@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>School-projects on Bongjun Jang</title>
+    <link>https://bongjunjang.com/school-projects/</link>
+    <description>Recent content in School-projects on Bongjun Jang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Fri, 13 Oct 2023 14:59:17 -0400</lastBuildDate><atom:link href="https://bongjunjang.com/school-projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Breaking Extended Vigenere Cipher</title>
+      <link>https://bongjunjang.com/school-projects/breaking-extended-vigenere-cipher/</link>
+      <pubDate>Fri, 13 Oct 2023 14:59:17 -0400</pubDate>
+      
+      <guid>https://bongjunjang.com/school-projects/breaking-extended-vigenere-cipher/</guid>
+      <description>For Appliced cryptography Course for this semester in NYU Tandon, I have been assigned a project to break a vigenere cipher but an extended version. Since I had already done a homework in KAIST, which was to write Kasiski examination program in OCaml, I thought it was going to be a piece of cake. However, the little tweak in the encryption scheme made it a lot more interesting. It was quite painful to come up with other techniques to break the cipher, but knowledges gained the hard way dies hard.</description>
+    </item>
+    
+    <item>
+      <title>KENS 내부 들여다보기</title>
+      <link>https://bongjunjang.com/school-projects/2022-10-26-reading-kens-internals/</link>
+      <pubDate>Wed, 26 Oct 2022 12:56:00 +0900</pubDate>
+      
+      <guid>https://bongjunjang.com/school-projects/2022-10-26-reading-kens-internals/</guid>
+      <description>2022년 가을학기 전산망 개론에서 KENS 프로젝트를 통해 TCP/IP의 3-Way Handshaking과 Reliable Data Transfer를 구현하였다.
+교수님의 판단으로 Flow Control은 스킵.
+KENS는 꽤 신기한 프로그램이다. 교육용으로 설계되어 deterministic하게 동작한다. 내 생각에 실제 네트워크 노드들을 실행시켜 테스트하면 OS 등 여러 비결정적 요소들 때문에 절대로 deterministic하게 작동할 수 없는데, KENS에서는 그런 일이 일어나지 않는다.
+그래서 과제가 끝나고 숨돌릴 시간이 있을 무렵 KENS의 내부 구조를 들여다보았다.
+KENS 내부 구조 System&amp;rsquo;s Properties System은 KENS에서 네트워크를 구성하는 중요한 클래스다.</description>
+    </item>
+    
+  </channel>
+</rss>

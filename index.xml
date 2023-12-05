@@ -20,10 +20,10 @@
     
     <item>
       <title>Breaking Extended Vigenere Cipher</title>
-      <link>https://bongjunjang.com/posts/breaking-extended-vigenere-cipher/</link>
+      <link>https://bongjunjang.com/school-projects/breaking-extended-vigenere-cipher/</link>
       <pubDate>Fri, 13 Oct 2023 14:59:17 -0400</pubDate>
       
-      <guid>https://bongjunjang.com/posts/breaking-extended-vigenere-cipher/</guid>
+      <guid>https://bongjunjang.com/school-projects/breaking-extended-vigenere-cipher/</guid>
       <description>For Appliced cryptography Course for this semester in NYU Tandon, I have been assigned a project to break a vigenere cipher but an extended version. Since I had already done a homework in KAIST, which was to write Kasiski examination program in OCaml, I thought it was going to be a piece of cake. However, the little tweak in the encryption scheme made it a lot more interesting. It was quite painful to come up with other techniques to break the cipher, but knowledges gained the hard way dies hard.</description>
     </item>
     
@@ -51,10 +51,10 @@ Odroid-N2+ 개발 보드를 구입해서 네트워크 연결을 관리하는 프
     
     <item>
       <title>KENS 내부 들여다보기</title>
-      <link>https://bongjunjang.com/posts/2022-10-26-reading-kens-internals/</link>
+      <link>https://bongjunjang.com/school-projects/2022-10-26-reading-kens-internals/</link>
       <pubDate>Wed, 26 Oct 2022 12:56:00 +0900</pubDate>
       
-      <guid>https://bongjunjang.com/posts/2022-10-26-reading-kens-internals/</guid>
+      <guid>https://bongjunjang.com/school-projects/2022-10-26-reading-kens-internals/</guid>
       <description>2022년 가을학기 전산망 개론에서 KENS 프로젝트를 통해 TCP/IP의 3-Way Handshaking과 Reliable Data Transfer를 구현하였다.
 교수님의 판단으로 Flow Control은 스킵.
 KENS는 꽤 신기한 프로그램이다. 교육용으로 설계되어 deterministic하게 동작한다. 내 생각에 실제 네트워크 노드들을 실행시켜 테스트하면 OS 등 여러 비결정적 요소들 때문에 절대로 deterministic하게 작동할 수 없는데, KENS에서는 그런 일이 일어나지 않는다.
@@ -95,10 +95,10 @@ KENS 내부 구조 System&amp;rsquo;s Properties System은 KENS에서 네트워�
     
     <item>
       <title>2019 Vagabonder 3</title>
-      <link>https://bongjunjang.com/posts/2019-vagabonder-3/</link>
+      <link>https://bongjunjang.com/travel/2019-vagabonder-3/</link>
       <pubDate>Thu, 07 Oct 2021 17:36:51 +0900</pubDate>
       
-      <guid>https://bongjunjang.com/posts/2019-vagabonder-3/</guid>
+      <guid>https://bongjunjang.com/travel/2019-vagabonder-3/</guid>
       <description>이르쿠츠크의 앙가라 강
 이르쿠츠크의 야경
 이르쿠츠크 9월 4일, 바이칼 호수 투어를 마치고 이르쿠츠크로 돌아온 승민이와 나. 에어비엔비 숙소 위치가 헷갈려서 같은 곳을 계속 빙빙 돌았다.
@@ -107,10 +107,10 @@ KENS 내부 구조 System&amp;rsquo;s Properties System은 KENS에서 네트워�
     
     <item>
       <title>2019 Vagabonder 2</title>
-      <link>https://bongjunjang.com/posts/2019-vagabonder-2/</link>
+      <link>https://bongjunjang.com/travel/2019-vagabonder-2/</link>
       <pubDate>Thu, 23 Sep 2021 15:57:31 +0900</pubDate>
       
-      <guid>https://bongjunjang.com/posts/2019-vagabonder-2/</guid>
+      <guid>https://bongjunjang.com/travel/2019-vagabonder-2/</guid>
       <description>바이칼 호수와 새들
 바이칼 호수 곳곳에 있는 샤머니즘 기둥
 바이칼 호수를 내려다보며
@@ -120,10 +120,10 @@ KENS 내부 구조 System&amp;rsquo;s Properties System은 KENS에서 네트워�
     
     <item>
       <title>2019 Vagabonder 1</title>
-      <link>https://bongjunjang.com/posts/2019-vagabonder-1/</link>
+      <link>https://bongjunjang.com/travel/2019-vagabonder-1/</link>
       <pubDate>Mon, 20 Sep 2021 21:12:00 +0900</pubDate>
       
-      <guid>https://bongjunjang.com/posts/2019-vagabonder-1/</guid>
+      <guid>https://bongjunjang.com/travel/2019-vagabonder-1/</guid>
       <description>기억에 남지 않는 것을 써라.
 &amp;lt;타이탄의 도구들&amp;gt; 중에서
 여행을 하며 많은 사진을 남겼지만 정작 글로 남긴 것이 많이 없다. 여행을 마친지 거의 2년이 다 되어 가는데! 나의 기억력을 믿고 치일피일 미루던 것이 지금까지 오고야 말았다. 기억을 되살리고자 마음을 다잡고 이 프로젝트를 시작한다. 만 나이 20세, 나의 123일 유라시아 여행기.

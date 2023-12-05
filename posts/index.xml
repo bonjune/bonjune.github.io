@@ -19,15 +19,6 @@
     </item>
     
     <item>
-      <title>Breaking Extended Vigenere Cipher</title>
-      <link>https://bongjunjang.com/posts/breaking-extended-vigenere-cipher/</link>
-      <pubDate>Fri, 13 Oct 2023 14:59:17 -0400</pubDate>
-      
-      <guid>https://bongjunjang.com/posts/breaking-extended-vigenere-cipher/</guid>
-      <description>For Appliced cryptography Course for this semester in NYU Tandon, I have been assigned a project to break a vigenere cipher but an extended version. Since I had already done a homework in KAIST, which was to write Kasiski examination program in OCaml, I thought it was going to be a piece of cake. However, the little tweak in the encryption scheme made it a lot more interesting. It was quite painful to come up with other techniques to break the cipher, but knowledges gained the hard way dies hard.</description>
-    </item>
-    
-    <item>
       <title>Odroid 개발보드에서 Zig와 C를 같이 사용하기</title>
       <link>https://bongjunjang.com/posts/using-zig-with-c-1/</link>
       <pubDate>Thu, 29 Jun 2023 13:00:00 +0900</pubDate>
@@ -47,19 +38,6 @@ Odroid-N2+ 개발 보드를 구입해서 네트워크 연결을 관리하는 프
       <guid>https://bongjunjang.com/posts/2023-02-01-every-new-framework-is-new-language/</guid>
       <description>웹 개발의 세계에는 수백 수천 가지의 프레임워크가 있고, 아마 지금도 새로운 프레임워크가 탄생하고 있을 것이다. 프레임워크는 웹 어플리케이션을 작성하는 데 필요한 기능을 제공하고, 프로그래머는 프레임워크가 제공하는 기능을 이용해서 웹 어플리케이션을 작성한다.
 프레임워크가 흥미로운 점은, 웹 어플리케이션을 작성하기 위해 특정한 관점을 제공한다는 점이다. 리액트(React)는 클라이언트의 UI를 컴포넌트 단위로 구성해야한다는 관점을 제공하고, 장고(Django)나 ASP.NET Core는 웹 어플리케이션을 모델-뷰-컨트롤러 단위로 구성해야한다는 관점을 제시한다. 그리고 프로그래머는 프레임워크를 사용하면서 대부분의 시간을 이러한 관점에 따라 웹 어플리케이션을 작성하면서 보낸다.</description>
-    </item>
-    
-    <item>
-      <title>KENS 내부 들여다보기</title>
-      <link>https://bongjunjang.com/posts/2022-10-26-reading-kens-internals/</link>
-      <pubDate>Wed, 26 Oct 2022 12:56:00 +0900</pubDate>
-      
-      <guid>https://bongjunjang.com/posts/2022-10-26-reading-kens-internals/</guid>
-      <description>2022년 가을학기 전산망 개론에서 KENS 프로젝트를 통해 TCP/IP의 3-Way Handshaking과 Reliable Data Transfer를 구현하였다.
-교수님의 판단으로 Flow Control은 스킵.
-KENS는 꽤 신기한 프로그램이다. 교육용으로 설계되어 deterministic하게 동작한다. 내 생각에 실제 네트워크 노드들을 실행시켜 테스트하면 OS 등 여러 비결정적 요소들 때문에 절대로 deterministic하게 작동할 수 없는데, KENS에서는 그런 일이 일어나지 않는다.
-그래서 과제가 끝나고 숨돌릴 시간이 있을 무렵 KENS의 내부 구조를 들여다보았다.
-KENS 내부 구조 System&amp;rsquo;s Properties System은 KENS에서 네트워크를 구성하는 중요한 클래스다.</description>
     </item>
     
     <item>
@@ -91,43 +69,6 @@ KENS 내부 구조 System&amp;rsquo;s Properties System은 KENS에서 네트워�
       
       <guid>https://bongjunjang.com/posts/baby-sitting-coupon-experiment/</guid>
       <description>우리가 일상에서 겪는 모든 경제활동에서 우리는 값을 치를 때 화폐(money)를 사용한다. 맥도날드에서 햄버거를 사먹을 때, 쿠팡에서 생필품을 주문할 때, 월급을 받을 때, 용돈을 받을 때 화폐를 사용하지 않는 곳이 없다. 우리가 거래를 할 때 사용되는 모든 것들을 화폐로 본다면 KRW, USD, EUR와 같이 일반적으로 떠오르는 종이화폐 외에도 금이나 은, 암호화폐 등 모든 것이 화폐가 될 수 있다. 역사를 보면 전쟁이나 대공황 같은 때에는 응급약품, 술, 마약, 간편식품(라면 등), 물이 화폐로 기능하기도 했다.</description>
-    </item>
-    
-    <item>
-      <title>2019 Vagabonder 3</title>
-      <link>https://bongjunjang.com/posts/2019-vagabonder-3/</link>
-      <pubDate>Thu, 07 Oct 2021 17:36:51 +0900</pubDate>
-      
-      <guid>https://bongjunjang.com/posts/2019-vagabonder-3/</guid>
-      <description>이르쿠츠크의 앙가라 강
-이르쿠츠크의 야경
-이르쿠츠크 9월 4일, 바이칼 호수 투어를 마치고 이르쿠츠크로 돌아온 승민이와 나. 에어비엔비 숙소 위치가 헷갈려서 같은 곳을 계속 빙빙 돌았다.
-배낭을 매고 계속 걷고 있으면 정말 이만한 고생이 없다. 호스트를 가까스로 만난 뒤에야 숙소에 짐을 풀 수 있었다. 사실 지도에 위치가 제대로 나와있지 않아서 짜증이 조금 난 상태였다. 나중에는 건물 찾는 데 익숙해지긴 했지만 우리나라처럼 건물 구획이 제대로 되어 있는 나라는 거의 없다. 결국 여행자의 경험으로 해결할 일이다.</description>
-    </item>
-    
-    <item>
-      <title>2019 Vagabonder 2</title>
-      <link>https://bongjunjang.com/posts/2019-vagabonder-2/</link>
-      <pubDate>Thu, 23 Sep 2021 15:57:31 +0900</pubDate>
-      
-      <guid>https://bongjunjang.com/posts/2019-vagabonder-2/</guid>
-      <description>바이칼 호수와 새들
-바이칼 호수 곳곳에 있는 샤머니즘 기둥
-바이칼 호수를 내려다보며
-바이칼 호수로 가는 길 이르쿠츠크 버스 스테이션에서 바이칼 호수의 올혼섬까지는 대략 6시간이 걸렸다. 부산에서 동두천까지 차로 7시간정도 걸리니 대략 비슷한 느낌이다. 올혼섬은 바이칼 호수 가운데 있는 섬인데 바이칼 호수를 둘러볼 수 있는 가장 좋은 곳이다. 물론 올혼섬말고도 리스트비얀카같은 곳에서도 바이칼 호수를 둘러볼 수 있다. 하지만 바이칼 호수에 둘러쌓여 있는 올혼섬만큼 좋은 곳은 없을 것이다.
-올혼섬으로 가는 길에 펼쳐지는 풍경들</description>
-    </item>
-    
-    <item>
-      <title>2019 Vagabonder 1</title>
-      <link>https://bongjunjang.com/posts/2019-vagabonder-1/</link>
-      <pubDate>Mon, 20 Sep 2021 21:12:00 +0900</pubDate>
-      
-      <guid>https://bongjunjang.com/posts/2019-vagabonder-1/</guid>
-      <description>기억에 남지 않는 것을 써라.
-&amp;lt;타이탄의 도구들&amp;gt; 중에서
-여행을 하며 많은 사진을 남겼지만 정작 글로 남긴 것이 많이 없다. 여행을 마친지 거의 2년이 다 되어 가는데! 나의 기억력을 믿고 치일피일 미루던 것이 지금까지 오고야 말았다. 기억을 되살리고자 마음을 다잡고 이 프로젝트를 시작한다. 만 나이 20세, 나의 123일 유라시아 여행기.
-2019년 7월과 8월은 덥고 피곤했던 여름이었다. 여름방학기간 동안 일년동안 달려온 2019 ICISTS 프로젝트를 끝내고 정신과 마음이 지칠대로 지친 상태였다. 프로젝트를 진행하며 팀원들과의 갈등도 있었고 하루에 세네시간 밖에 못 자면서도 해내야 하는 일도 있었다.</description>
     </item>
     
     <item>
