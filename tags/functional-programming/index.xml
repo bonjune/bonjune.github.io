@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 31 Aug 2021 14:55:09 +0900</lastBuildDate><atom:link href="https://bongjunjang.com/tags/functional-programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>쿠키런 킹덤 서버 아키텍처 3</title>
-      <link>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-3/</link>
+      <link>https://bongjunjang.com/notes/cookie-run-kingdom-server-architecture-3/</link>
       <pubDate>Tue, 31 Aug 2021 14:55:09 +0900</pubDate>
       
-      <guid>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-3/</guid>
+      <guid>https://bongjunjang.com/notes/cookie-run-kingdom-server-architecture-3/</guid>
       <description>세번쨰 주제에서 함수형 프로그래밍에 대한 이야기가 눈에 띈다. 영상에서 소개되는 &amp;lsquo;프로그램&amp;rsquo;이라는 개념은 함수형 프로그래밍의 &amp;lsquo;순수 함수&amp;rsquo;라는 개념과 동일하다. 또한 Scala의 DSL 기능이 보이는데, 어떻게 작동하는지 다시 살펴보자. 기억이 가물가물하다.
 Pure Function(순수 함수) 함수가 순수하다는 말은 함수가 같은 입력에 대해서 항상 같은 결과값을 만들며, 부작용(side effect)이 없다는 뜻이다. 여기서 부작용이란 함수의 &amp;lsquo;보이지 않는 결과값&amp;rsquo;이라고 할 수 있는데, 함수 외부의 가변 변수를 수정한다든지, 시스템의 상태를 변경시킨다던지 하는 것들을 말한다. 순수 함수를 통해 우리는 함수가 오로지 입력과 결과값만을 통해 외부와 소통할 수 있음을 보장할 수 있다.</description>
     </item>
