@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Bongjun Jang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Thu, 29 Jun 2023 13:00:00 +0900</lastBuildDate><atom:link href="https://bongjunjang.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://bongjunjang.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is Randomness?</title>
+      <link>https://bongjunjang.com/posts/what-is-random/</link>
+      <pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://bongjunjang.com/posts/what-is-random/</guid>
+      <description>Short Answer: You call something is random because the best thing you can tell about it is just a guess.
+Long Answer An intesting example that enligntened me was the famous coin toss problem. We believe that the coin toss is a 50/50 experiment. That&amp;rsquo;s because we toss coin for deciding which side will take the turn first in a game. We believe it is fair. But recent findings suggest that our belief could be wrong: the experiment is not 50/50.</description>
+    </item>
+    
     <item>
       <title>Odroid 개발보드에서 Zig와 C를 같이 사용하기</title>
       <link>https://bongjunjang.com/posts/using-zig-with-c-1/</link>

@@ -3,7 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bongjunjang.com/</loc>
-    <lastmod>2023-10-13T14:59:17-04:00</lastmod>
+    <lastmod>2023-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bongjunjang.com/posts/</loc>
+    <lastmod>2023-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bongjunjang.com/posts/what-is-random/</loc>
+    <lastmod>2023-12-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://bongjunjang.com/school-projects/breaking-extended-vigenere-cipher/</loc>
     <lastmod>2023-10-13T14:59:17-04:00</lastmod>
@@ -15,9 +21,6 @@
     <lastmod>2023-06-29T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://bongjunjang.com/posts/using-zig-with-c-1/</loc>
-    <lastmod>2023-06-29T13:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://bongjunjang.com/posts/</loc>
     <lastmod>2023-06-29T13:00:00+09:00</lastmod>
   </url><url>
     <loc>https://bongjunjang.com/tags/programming/</loc>

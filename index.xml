@@ -6,7 +6,17 @@
     <description>Recent content on Bongjun Jang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Fri, 13 Oct 2023 14:59:17 -0400</lastBuildDate><atom:link href="https://bongjunjang.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://bongjunjang.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is Randomness?</title>
+      <link>https://bongjunjang.com/posts/what-is-random/</link>
+      <pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://bongjunjang.com/posts/what-is-random/</guid>
+      <description>Short Answer: You call something is random because the best thing you can tell about it is just a guess.
+Long Answer An intesting example that enligntened me was the famous coin toss problem. We believe that the coin toss is a 50/50 experiment. That&amp;rsquo;s because we toss coin for deciding which side will take the turn first in a game. We believe it is fair. But recent findings suggest that our belief could be wrong: the experiment is not 50/50.</description>
+    </item>
+    
     <item>
       <title>Breaking Extended Vigenere Cipher</title>
       <link>https://bongjunjang.com/school-projects/breaking-extended-vigenere-cipher/</link>
