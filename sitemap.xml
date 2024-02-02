@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bongjunjang.com/</loc>
-    <lastmod>2023-12-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-02-02T22:43:16+09:00</lastmod>
   </url><url>
     <loc>https://bongjunjang.com/posts/</loc>
-    <lastmod>2023-12-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-02-02T22:43:16+09:00</lastmod>
+  </url><url>
+    <loc>https://bongjunjang.com/posts/machine-learning-and-fuzzing/</loc>
+    <lastmod>2024-02-02T22:43:16+09:00</lastmod>
   </url><url>
     <loc>https://bongjunjang.com/posts/what-is-random/</loc>
     <lastmod>2023-12-12T00:00:00+00:00</lastmod>

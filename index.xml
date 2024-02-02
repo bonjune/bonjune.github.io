@@ -6,7 +6,18 @@
     <description>Recent content on Bongjun Jang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Tue, 12 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://bongjunjang.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Feb 2024 22:43:16 +0900</lastBuildDate><atom:link href="https://bongjunjang.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>기계 학습과 지향성 실행탐험기</title>
+      <link>https://bongjunjang.com/posts/machine-learning-and-fuzzing/</link>
+      <pubDate>Fri, 02 Feb 2024 22:43:16 +0900</pubDate>
+      
+      <guid>https://bongjunjang.com/posts/machine-learning-and-fuzzing/</guid>
+      <description>이 글에서는 컴퓨터 과학에서 부르는 Fuzzing을 실행탐험, Fuzzer를 실행탐험기라고 부릅니다.
+지금 인공지능 분야를 이끄는 기계학습은 컴퓨터 프로그램이 데이터를 학습하는 기틀을 제공한다. 이 학습의 틀은 다음과 같다.
+데이터를 알맞은 형식에 맞게 준비한다. 이 때, 입력 데이터와 정답 데이터를 구분한다. 입력 데이터에서 결과물을 도출하는 모형 함수를 정의한다. 이 때, 함수는 계수(Parameter)를 가진다. 모형함수의 결과값과 정답 데이터를 비교해 평가하는 손실함수(Loss Function)를 정의한다. 손실함수값이 줄어들도록 모형함수의 계수를 조절한다. 입력 데이터를 모형함수에 넣고, 손실함수값을 통해 모형함수를 계속해서 조절해나가는 것이 기계학습의 핵심이다.</description>
+    </item>
+    
     <item>
       <title>What is Randomness?</title>
       <link>https://bongjunjang.com/posts/what-is-random/</link>
