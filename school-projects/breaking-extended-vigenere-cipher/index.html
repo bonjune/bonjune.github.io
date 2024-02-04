@@ -25,8 +25,7 @@
 		<article>
 			<h1>Breaking Extended Vigenere Cipher</h1>
 			<time datetime="2023-10-13T14:59:17">2023 Oct 13</time>
-			<div>
-				<p>For Appliced cryptography Course for this semester in NYU Tandon,
+      <p>For Appliced cryptography Course for this semester in NYU Tandon,
 I have been assigned a project to break a vigenere cipher but an extended version.
 Since I had already done a homework in KAIST, which was to write Kasiski examination program in OCaml,
 I thought it was going to be a piece of cake. However, the little tweak in the encryption scheme made it a lot more interesting.
@@ -90,7 +89,6 @@ That is, i-th ciphertext of key length k is encrypted from i-th plaintext of the
 <h2 id="is-entropy-a-good-method">Is entropy a good method?</h2>
    
 <figure>
-  <div>
     <img
       srcset='
                 /school-projects/breaking-extended-vigenere-cipher/entropy_plot_30_hua6c7780057ac03b91ed3f84e61ad3a49_484661_320x0_resize_box_3.png 320w,
@@ -101,7 +99,6 @@ That is, i-th ciphertext of key length k is encrypted from i-th plaintext of the
       src='/school-projects/breaking-extended-vigenere-cipher/entropy_plot_30_hua6c7780057ac03b91ed3f84e61ad3a49_484661_600x0_resize_box_3.png'
       alt=""
     />
-  </div>
   <figcaption>
     <p></p>
   </figcaption>
@@ -126,7 +123,6 @@ because it increases entropies of all the differences derived from the ciphertex
 A simple idea that if a random character is removed entropy will decrease is used here.</p>
    
 <figure>
-  <div>
     <img
       srcset='
                 /school-projects/breaking-extended-vigenere-cipher/entropy_and_removal_entropy_hu06a1c0d6e12357110f9bb1433b2cadfe_38939_320x0_resize_box_3.png 320w,
@@ -137,7 +133,6 @@ A simple idea that if a random character is removed entropy will decrease is use
       src='/school-projects/breaking-extended-vigenere-cipher/entropy_and_removal_entropy_hu06a1c0d6e12357110f9bb1433b2cadfe_38939_600x0_resize_box_3.png'
       alt=""
     />
-  </div>
   <figcaption>
     <p></p>
   </figcaption>
@@ -154,7 +149,6 @@ But we need more evidence the numbers are repeating or not.</p>
 <h2 id="fourier-transform">Fourier Transform</h2>
    
 <figure>
-  <div>
     <img
       srcset='
                 /school-projects/breaking-extended-vigenere-cipher/fft-pattern_hu82d360cfdbb2298e569c7d76fd4efdb5_9154_320x0_resize_box_3.png 320w,
@@ -165,7 +159,6 @@ But we need more evidence the numbers are repeating or not.</p>
       src='/school-projects/breaking-extended-vigenere-cipher/fft-pattern_hu82d360cfdbb2298e569c7d76fd4efdb5_9154_600x0_resize_box_3.png'
       alt=""
     />
-  </div>
   <figcaption>
     <p></p>
   </figcaption>
@@ -184,7 +177,6 @@ I don&rsquo;t know how Fourier Transform works, but it was a clear pattern when 
 </ol>
    
 <figure>
-  <div>
     <img
       srcset='
                 /school-projects/breaking-extended-vigenere-cipher/result1_hu8c95ba5131d2c5fb140f2ee797c792f0_51438_320x0_resize_box_3.png 320w,
@@ -195,7 +187,6 @@ I don&rsquo;t know how Fourier Transform works, but it was a clear pattern when 
       src='/school-projects/breaking-extended-vigenere-cipher/result1_hu8c95ba5131d2c5fb140f2ee797c792f0_51438_600x0_resize_box_3.png'
       alt=""
     />
-  </div>
   <figcaption>
     <p></p>
   </figcaption>
@@ -219,7 +210,6 @@ If there is a significantly low entropy, run FFT test.</p>
 <p>Now the result is more satisfactory.</p>
    
 <figure>
-  <div>
     <img
       srcset='
                 /school-projects/breaking-extended-vigenere-cipher/result2_hu8534ec92f9b9164d2a49d124f5102a05_51549_320x0_resize_box_3.png 320w,
@@ -230,7 +220,6 @@ If there is a significantly low entropy, run FFT test.</p>
       src='/school-projects/breaking-extended-vigenere-cipher/result2_hu8534ec92f9b9164d2a49d124f5102a05_51549_600x0_resize_box_3.png'
       alt=""
     />
-  </div>
   <figcaption>
     <p></p>
   </figcaption>
@@ -246,7 +235,6 @@ The program I wrote correctly decrypts 63.81% of all test cases with maximum 17s
 and skills to improve performance of a program by precomputation (nice refresh for performance optimization!)</p>
 <p>The full report can be found here: <a href="https://docs.google.com/document/d/e/2PACX-1vTomgI21nstUMmi3HSI8N7bbqmHNSCSRXoyfFq23_fWK5_f9VmcmNwj4pe22cFeR562FZ2lhKqt_S-B/pub">https://docs.google.com/document/d/e/2PACX-1vTomgI21nstUMmi3HSI8N7bbqmHNSCSRXoyfFq23_fWK5_f9VmcmNwj4pe22cFeR562FZ2lhKqt_S-B/pub</a></p>
 
-			</div>
 			
 			
 		</article>

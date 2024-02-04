@@ -25,8 +25,7 @@
 		<article>
 			<h1>쿠키런 킹덤 서버 아키텍처 1</h1>
 			<time datetime="2021-08-29T12:37:24">2021 Aug 29</time>
-			<div>
-				<p>Actor Model에 대해서 정리하며 포스트를 쓰려다가 예전에 봤던 <a href="https://www.youtube.com/watch?v=FUEZibcZEkg">NDC21-프로그래밍, 쿠키런 킹덤 서버 아키텍처 뜯어먹기</a>가 떠올라서 리뷰해보려고 한다.
+      <p>Actor Model에 대해서 정리하며 포스트를 쓰려다가 예전에 봤던 <a href="https://www.youtube.com/watch?v=FUEZibcZEkg">NDC21-프로그래밍, 쿠키런 킹덤 서버 아키텍처 뜯어먹기</a>가 떠올라서 리뷰해보려고 한다.
 서버 아키텍처에 대해 많은 내용을 배울 수 있는 자료라서 좋은 공부가 될 것 같다.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -61,7 +60,6 @@ Stateful 서버는 웹 어플리케이션 프로세스 자체에 상태를 저�
 <h4 id="pros">Pros</h4>
    
 <figure>
-  <div>
     <img
       srcset='
                 /notes/cookie-run-kingdom-server-architecture-1/pure_function_hu1760604db16919fe315a0e25d5d1e1c0_22976_320x0_resize_box_3.png 320w,
@@ -72,7 +70,6 @@ Stateful 서버는 웹 어플리케이션 프로세스 자체에 상태를 저�
       src='/notes/cookie-run-kingdom-server-architecture-1/pure_function_hu1760604db16919fe315a0e25d5d1e1c0_22976_600x0_resize_box_3.png'
       alt="pure function"
     />
-  </div>
   <figcaption>
     <p></p>
   </figcaption>
@@ -83,7 +80,6 @@ Stateful 서버는 웹 어플리케이션 프로세스 자체에 상태를 저�
 서버가 Pure Function이 되면 Input에 대한 Output이 항상 동일해지기 때문에 서버를 아무런 제약없이 복제할 수 있게 된다.</p>
    
 <figure>
-  <div>
     <img
       srcset='
                 /notes/cookie-run-kingdom-server-architecture-1/pure_function_scaling_out_hu792f6aa19c5a217dc60e2aa120c75f21_87188_320x0_resize_box_3.png 320w,
@@ -94,7 +90,6 @@ Stateful 서버는 웹 어플리케이션 프로세스 자체에 상태를 저�
       src='/notes/cookie-run-kingdom-server-architecture-1/pure_function_scaling_out_hu792f6aa19c5a217dc60e2aa120c75f21_87188_600x0_resize_box_3.png'
       alt="pure function scaling out"
     />
-  </div>
   <figcaption>
     <p></p>
   </figcaption>
@@ -110,7 +105,6 @@ Stateful 서버는 웹 어플리케이션 프로세스 자체에 상태를 저�
 <h4 id="cons">Cons</h4>
    
 <figure>
-  <div>
     <img
       srcset='
                 /notes/cookie-run-kingdom-server-architecture-1/stateless_db_bottleneck_huf82cc35c8b37d0001b81de06120f8930_134599_320x0_resize_box_3.png 320w,
@@ -121,7 +115,6 @@ Stateful 서버는 웹 어플리케이션 프로세스 자체에 상태를 저�
       src='/notes/cookie-run-kingdom-server-architecture-1/stateless_db_bottleneck_huf82cc35c8b37d0001b81de06120f8930_134599_600x0_resize_box_3.png'
       alt="stateless database connection bottleneck"
     />
-  </div>
   <figcaption>
     <p></p>
   </figcaption>
@@ -136,7 +129,6 @@ Stateful 서버는 웹 어플리케이션 프로세스 자체에 상태를 저�
 <h4 id="pros-1">Pros</h4>
    
 <figure>
-  <div>
     <img
       srcset='
                 /notes/cookie-run-kingdom-server-architecture-1/memory_and_db_perf_diff_hudcd914b34fdaa369d4f95a57c156fc8a_34878_320x0_resize_box_3.png 320w,
@@ -147,7 +139,6 @@ Stateful 서버는 웹 어플리케이션 프로세스 자체에 상태를 저�
       src='/notes/cookie-run-kingdom-server-architecture-1/memory_and_db_perf_diff_hudcd914b34fdaa369d4f95a57c156fc8a_34878_600x0_resize_box_3.png'
       alt="a memory is faster than a db"
     />
-  </div>
   <figcaption>
     <p></p>
   </figcaption>
@@ -161,7 +152,6 @@ Stateful 서버는 웹 어플리케이션 프로세스 자체에 상태를 저�
 <h4 id="cons-1">Cons</h4>
    
 <figure>
-  <div>
     <img
       srcset='
                 /notes/cookie-run-kingdom-server-architecture-1/stateful_servers_huf980c222278fd67bdfb6df2ec1eb4f04_96093_320x0_resize_box_3.png 320w,
@@ -172,7 +162,6 @@ Stateful 서버는 웹 어플리케이션 프로세스 자체에 상태를 저�
       src='/notes/cookie-run-kingdom-server-architecture-1/stateful_servers_huf980c222278fd67bdfb6df2ec1eb4f04_96093_600x0_resize_box_3.png'
       alt="stateful servers has different states"
     />
-  </div>
   <figcaption>
     <p></p>
   </figcaption>
@@ -186,7 +175,6 @@ Stateful 서버는 웹 어플리케이션 프로세스 자체에 상태를 저�
 이를 통해 서버가 구현해야 하는 기능을 명확하게 모델링할 수 있는데, 자세한 내용은 다음 편의 Event Sourcing에서 다루도록 하겠다.</p>
    
 <figure>
-  <div>
     <img
       srcset='
                 /notes/cookie-run-kingdom-server-architecture-1/stateful_server_fail_to_balance_hu89cbb4f754f2ea27a266c45c225d638f_71106_320x0_resize_box_3.png 320w,
@@ -197,7 +185,6 @@ Stateful 서버는 웹 어플리케이션 프로세스 자체에 상태를 저�
       src='/notes/cookie-run-kingdom-server-architecture-1/stateful_server_fail_to_balance_hu89cbb4f754f2ea27a266c45c225d638f_71106_600x0_resize_box_3.png'
       alt="stateful server failure"
     />
-  </div>
   <figcaption>
     <p></p>
   </figcaption>
@@ -223,7 +210,6 @@ Actor Model을 도입해 어플리케이션을 작성할 때 마주칠 수 있�
 <h3 id="what-is-an-actor">What is an Actor?</h3>
    
 <figure>
-  <div>
     <img
       srcset='
                 /notes/cookie-run-kingdom-server-architecture-1/actor_model_huee2ed0f498179403073c8fe7d2488003_90160_320x0_resize_box_3.png 320w,
@@ -234,7 +220,6 @@ Actor Model을 도입해 어플리케이션을 작성할 때 마주칠 수 있�
       src='/notes/cookie-run-kingdom-server-architecture-1/actor_model_huee2ed0f498179403073c8fe7d2488003_90160_600x0_resize_box_3.png'
       alt="overview of actor model"
     />
-  </div>
   <figcaption>
     <p></p>
   </figcaption>
@@ -256,7 +241,6 @@ Actor Model을 도입해 어플리케이션을 작성할 때 마주칠 수 있�
 OOP에서 객체가 오직 메서드를 통해 외부와 상호작용하는 것과 같은 이치다.</p>
    
 <figure>
-  <div>
     <img
       srcset='
                 /notes/cookie-run-kingdom-server-architecture-1/ErrorKernel_hu685a31bd52abc6feb7e03a77800898d6_48323_320x0_resize_box_3.png 320w,
@@ -267,7 +251,6 @@ OOP에서 객체가 오직 메서드를 통해 외부와 상호작용하는 것�
       src='/notes/cookie-run-kingdom-server-architecture-1/ErrorKernel_hu685a31bd52abc6feb7e03a77800898d6_48323_600x0_resize_box_3.png'
       alt="actor system"
     />
-  </div>
   <figcaption>
     <p>출처: https://getakka.net/articles/concepts/actor-systems.html</p>
   </figcaption>
@@ -303,7 +286,6 @@ Stateless라는 단순명확한 서버구조의 강점을 포기하고 다른 �
 <p>지금까지 Stateless, Stateful, Actor Model의 개념을 살펴보고, 추가적으로 Akka Cluster Sharding이 하는 일을 훑어봤다.
 다음에는 CRUD와 Event Sourcing에 대해 정리해보자. F#의 MailboxProcessor를 통해 Actor 모델을 실습해보는 것도 좋을 것 같다.</p>
 
-			</div>
 			
 			<div>
 				<h3>Tags</h3>
