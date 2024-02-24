@@ -12,23 +12,25 @@
 </head>
 <body>
 	<header>
-  <a href="https://bongjunjang.com/">Bongjun Jang</a>
+  <center>
+    <a href="https://bongjunjang.com/">
+      <h1> Bongjun Jang </h1>
+    </a>
+  </center>
   
 </header>
 
 	
-	<main>
-		<article>
-			<h1>쿠키런 킹덤 서버 아키텍처 3</h1>
-			<time datetime="2021-08-31T14:55:09">2021 Aug 31</time>
-			<div>
-				<p>세번쨰 주제에서 함수형 프로그래밍에 대한 이야기가 눈에 띈다.
+<main>
+	<article>
+		<h1>쿠키런 킹덤 서버 아키텍처 3</h1>
+		<time datetime="2021-08-31T14:55:09">2021 Aug 31</time>
+		<p>세번쨰 주제에서 함수형 프로그래밍에 대한 이야기가 눈에 띈다.
 영상에서 소개되는 &lsquo;프로그램&rsquo;이라는 개념은 함수형 프로그래밍의 &lsquo;순수 함수&rsquo;라는 개념과 동일하다.
 또한 Scala의 DSL 기능이 보이는데, 어떻게 작동하는지 다시 살펴보자. 기억이 가물가물하다.</p>
 <h2 id="pure-function순수-함수">Pure Function(순수 함수)</h2>
    
 <figure>
-  <div>
     <img
       srcset='
                 /posts/cookie-run-kingdom-server-architecture-3/pure_function_hu1760604db16919fe315a0e25d5d1e1c0_22976_320x0_resize_box_3.png 320w,
@@ -39,7 +41,6 @@
       src='/posts/cookie-run-kingdom-server-architecture-3/pure_function_hu1760604db16919fe315a0e25d5d1e1c0_22976_600x0_resize_box_3.png'
       alt="pure function diagram"
     />
-  </div>
   <figcaption>
     <p></p>
   </figcaption>
@@ -52,7 +53,6 @@
 <p>아주 단순한 예시를 들어서 순수 함수와 비순수 함수를 이해해보자.</p>
    
 <figure>
-  <div>
     <img
       srcset='
                 /posts/cookie-run-kingdom-server-architecture-3/impure_function_unseen_input_huba2a402b34b0fee3791f648dd7de411d_37911_320x0_resize_box_3.png 320w,
@@ -63,7 +63,6 @@
       src='/posts/cookie-run-kingdom-server-architecture-3/impure_function_unseen_input_huba2a402b34b0fee3791f648dd7de411d_37911_600x0_resize_box_3.png'
       alt="impure function"
     />
-  </div>
   <figcaption>
     <p></p>
   </figcaption>
@@ -79,7 +78,6 @@
 </span></span></code></pre></div><p>다른 예시를 들어보자.</p>
    
 <figure>
-  <div>
     <img
       srcset='
                 /posts/cookie-run-kingdom-server-architecture-3/inpure_function_db_conn_huba2a402b34b0fee3791f648dd7de411d_39204_320x0_resize_box_3.png 320w,
@@ -90,7 +88,6 @@
       src='/posts/cookie-run-kingdom-server-architecture-3/inpure_function_db_conn_huba2a402b34b0fee3791f648dd7de411d_39204_600x0_resize_box_3.png'
       alt="impure function of connecting db"
     />
-  </div>
   <figcaption>
     <p></p>
   </figcaption>
@@ -117,7 +114,6 @@
 핵심 로직을 통해 얻은 결과값을 비순수 함수를 통해 저장하는 것과 같은 일을 하는 것이다.</p>
    
 <figure>
-  <div>
     <img
       srcset='
                 /posts/cookie-run-kingdom-server-architecture-3/pure_program_hu081d36eb02d046d630154fff1f0294b9_70574_320x0_resize_box_3.png 320w,
@@ -128,7 +124,6 @@
       src='/posts/cookie-run-kingdom-server-architecture-3/pure_program_hu081d36eb02d046d630154fff1f0294b9_70574_600x0_resize_box_3.png'
       alt="pure program does not have a side effect"
     />
-  </div>
   <figcaption>
     <p></p>
   </figcaption>
@@ -175,12 +170,12 @@ Scala의 for comprehension을 사용하기 위해서는 사용하고자 하는 �
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// 좀 더 일반적이고 간결하게 (&#39;T -&gt; Wrap&lt;&#39;U&gt;) -&gt; &#39;T -&gt; Wrap&lt;&#39;U&gt; 로 쓸 수도 있다. (&#39;T를 Wrap&lt;&#39;T&gt;로 치환하면 동등하다)
 </span></span></span></code></pre></div><p>정의만 보면 이해가 힘드니 예시를 들어보자.
 list of floats를 list of int로 map하는 예다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fsharp" data-lang="fsharp"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> floats <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span><span style="color:#f92672">;</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">.</span><span style="color:#ae81ff">3</span><span style="color:#f92672">;</span> <span style="color:#ae81ff">9</span><span style="color:#f92672">.</span><span style="color:#ae81ff">7</span><span style="color:#f92672">;</span> <span style="color:#ae81ff">6</span><span style="color:#f92672">.</span><span style="color:#ae81ff">4</span><span style="color:#f92672">]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fsharp" data-lang="fsharp"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> floats <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>1<span style="color:#f92672">.</span>5<span style="color:#f92672">;</span> 2<span style="color:#f92672">.</span>3<span style="color:#f92672">;</span> 9<span style="color:#f92672">.</span>7<span style="color:#f92672">;</span> 6<span style="color:#f92672">.</span>4<span style="color:#f92672">]</span>
 </span></span><span style="display:flex;"><span>floats
 </span></span><span style="display:flex;"><span><span style="color:#f92672">|&gt;</span> List.map <span style="color:#f92672">(</span><span style="color:#66d9ef">fun</span> r <span style="color:#f92672">-&gt;</span> int r<span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// returns [1; 2; 9; 6]
 </span></span></span></code></pre></div><p>다음은 list of (list of floats)를 list of int로 flatMap(collect)하는 예다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fsharp" data-lang="fsharp"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> floats <span style="color:#f92672">=</span> <span style="color:#f92672">[[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span><span style="color:#f92672">;</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">.</span><span style="color:#ae81ff">3</span><span style="color:#f92672">];</span> <span style="color:#f92672">[</span><span style="color:#ae81ff">9</span><span style="color:#f92672">.</span><span style="color:#ae81ff">7</span><span style="color:#f92672">;</span> <span style="color:#ae81ff">6</span><span style="color:#f92672">.</span><span style="color:#ae81ff">4</span><span style="color:#f92672">]]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fsharp" data-lang="fsharp"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> floats <span style="color:#f92672">=</span> <span style="color:#f92672">[[</span>1<span style="color:#f92672">.</span>5<span style="color:#f92672">;</span> 2<span style="color:#f92672">.</span>3<span style="color:#f92672">];</span> <span style="color:#f92672">[</span>9<span style="color:#f92672">.</span>7<span style="color:#f92672">;</span> 6<span style="color:#f92672">.</span>4<span style="color:#f92672">]]</span>
 </span></span><span style="display:flex;"><span>floats
 </span></span><span style="display:flex;"><span><span style="color:#f92672">|&gt;</span> List.collect <span style="color:#f92672">(</span><span style="color:#66d9ef">fun</span> xs <span style="color:#f92672">-&gt;</span> xs <span style="color:#f92672">|&gt;</span> List.map int<span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// returns [1; 2; 9; 6]
@@ -225,26 +220,9 @@ Scala의 for comprehension 코드를 보면 이유를 알 수 있다.</p>
 <li>F# Computation Expression으로 Lego Mindstorm DSL 구현하기: <a href="https://thinkbeforecoding.com/post/2020/12/03/applicative-computation-expressions-3">https://thinkbeforecoding.com/post/2020/12/03/applicative-computation-expressions-3</a></li>
 </ul>
 
-			</div>
-			
-			<div>
-				<h3>Tags</h3>
-				<ul id="tags">
-					
-					<li><a href="/tags/computer">computer</a></li>
-					
-					<li><a href="/tags/functional-programming">functional-programming</a></li>
-					
-					<li><a href="/tags/domain-specific-language">domain-specific-language</a></li>
-					
-					<li><a href="/tags/programming-language">programming-language</a></li>
-					
-				</ul>
-			</div>
-			
-			
-		</article>
-	</main>
+		
+	</article>
+</main>
 <aside>
 	<div>
 		<div>
@@ -253,15 +231,15 @@ Scala의 for comprehension 코드를 보면 이유를 알 수 있다.</p>
 		<div>
 			<ul>
 				
-				<li><a href="/posts/%EC%9D%B4%EC%9C%A0%EB%A5%BC-%EC%B0%BE%EC%A7%80-%EB%A7%90%EB%9D%BC/">이유를 찾지 말라</a></li>
+				<li><a href="/posts/machine-learning-and-fuzzing/">기계 학습과 지향성 실행탐험기</a></li>
+				
+				<li><a href="/posts/what-is-random/">What is Randomness?</a></li>
+				
+				<li><a href="/posts/breaking-extended-vigenere-cipher/">Breaking Extended Vigenere Cipher</a></li>
 				
 				<li><a href="/posts/using-zig-with-c-1/">Odroid 개발보드에서 Zig와 C를 같이 사용하기</a></li>
 				
 				<li><a href="/posts/2023-02-01-every-new-framework-is-new-language/">모든 프레임워크는 새로운 언어다</a></li>
-				
-				<li><a href="/posts/actor-model-in-practice/">액터 모델 실습</a></li>
-				
-				<li><a href="/posts/what-runs-bitcoin-network/">비트코인을 지탱하는 원동력</a></li>
 				
 			</ul>
 		</div>
@@ -270,7 +248,7 @@ Scala의 for comprehension 코드를 보면 이유를 알 수 있다.</p>
 
 
 	<footer>
-	<p>&copy; 2023 <a href="https://bongjunjang.com/">Bongjun Jang</a></p>
+	<p>&copy; 2024 <a href="https://bongjunjang.com/">Bongjun Jang</a></p>
 </footer>
 
 </body>
