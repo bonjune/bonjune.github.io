@@ -8,22 +8,8 @@
     <language>ko</language>
     <managingEditor>bongjun.jang [at] kaist.ac.kr (Bongjun Jang)</managingEditor>
     <webMaster>bongjun.jang [at] kaist.ac.kr (Bongjun Jang)</webMaster>
-    <lastBuildDate>Tue, 31 Aug 2021 14:55:09 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 29 Aug 2021 12:37:24 +0900</lastBuildDate>
     <atom:link href="https://bongjunjang.com/tags/computer/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>쿠키런 킹덤 서버 아키텍처 3</title>
-      <link>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-3/</link>
-      <pubDate>Tue, 31 Aug 2021 14:55:09 +0900</pubDate><author>bongjun.jang [at] kaist.ac.kr (Bongjun Jang)</author>
-      <guid>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-3/</guid>
-      <description>세번쨰 주제에서 함수형 프로그래밍에 대한 이야기가 눈에 띈다. 영상에서 소개되는 &amp;lsquo;프로그램&amp;rsquo;이라는 개념은 함수형 프로그래밍의 &amp;lsquo;순수 함수&amp;rsquo;라는 개념과 동일하다. 또한 Scala의 DSL 기능이 보이는데, 어떻게 작동하는지 다시 살펴보자. 기억이 가물가물하다.&#xA;Pure Function(순수 함수) 함수가 순수하다는 말은 함수가 같은 입력에 대해서 항상 같은 결과값을 만들며, 부작용(side effect)이 없다는 뜻이다. 여기서 부작용이란 함수의 &amp;lsquo;보이지 않는 결과값&amp;rsquo;이라고 할 수 있는데, 함수 외부의 가변 변수를 수정한다든지, 시스템의 상태를 변경시킨다던지 하는 것들을 말한다. 순수 함수를 통해 우리는 함수가 오로지 입력과 결과값만을 통해 외부와 소통할 수 있음을 보장할 수 있다.</description>
-    </item>
-    <item>
-      <title>쿠키런 킹덤 서버 아키텍처 2</title>
-      <link>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-2/</link>
-      <pubDate>Mon, 30 Aug 2021 20:19:15 +0900</pubDate><author>bongjun.jang [at] kaist.ac.kr (Bongjun Jang)</author>
-      <guid>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-2/</guid>
-      <description>이번 포스트에서 다룰 내용은 CRUD와 Event Sourcing이다. 이 주제는 데이터를 다루는 방법에 대한 이야기다.&#xA;가장 간단한 예로 은행 계좌를 관리하는 어플리케이션을 생각해보자. 은행 계좌는 잔액를 관리해야하며 계좌 간의 송금 기능을 구현해야 한다. 이를 CRUD와 Event Sourcing으로 각각 구현해보자.&#xA;CRUD CRUD는 Create, Read, Update and Delete의 약어로 데이터를 생성하고 읽고 수정하고 삭제하는 기능을 말한다. F#으로 CRUD를 나타내보면 다음과 같은 코드로 나타낼 수 있을 것이다.&#xA;// 1. Create let mutable account = BankAccount(500) // 2.</description>
-    </item>
     <item>
       <title>쿠키런 킹덤 서버 아키텍처 1</title>
       <link>https://bongjunjang.com/posts/cookie-run-kingdom-server-architecture-1/</link>

@@ -8,69 +8,13 @@
     <language>ko</language>
     <managingEditor>bongjun.jang [at] kaist.ac.kr (Bongjun Jang)</managingEditor>
     <webMaster>bongjun.jang [at] kaist.ac.kr (Bongjun Jang)</webMaster>
-    <lastBuildDate>Mon, 29 Nov 2021 08:54:51 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 17 Nov 2021 15:53:34 +0900</lastBuildDate>
     <atom:link href="https://bongjunjang.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>actor model</title>
-      <link>https://bongjunjang.com/tags/actor-model/</link>
-      <pubDate>Mon, 29 Nov 2021 08:54:51 +0900</pubDate><author>bongjun.jang [at] kaist.ac.kr (Bongjun Jang)</author>
-      <guid>https://bongjunjang.com/tags/actor-model/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>elixir</title>
-      <link>https://bongjunjang.com/tags/elixir/</link>
-      <pubDate>Mon, 29 Nov 2021 08:54:51 +0900</pubDate><author>bongjun.jang [at] kaist.ac.kr (Bongjun Jang)</author>
-      <guid>https://bongjunjang.com/tags/elixir/</guid>
-      <description></description>
-    </item>
     <item>
       <title>economics</title>
       <link>https://bongjunjang.com/tags/economics/</link>
       <pubDate>Wed, 17 Nov 2021 15:53:34 +0900</pubDate><author>bongjun.jang [at] kaist.ac.kr (Bongjun Jang)</author>
       <guid>https://bongjunjang.com/tags/economics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>computer</title>
-      <link>https://bongjunjang.com/tags/computer/</link>
-      <pubDate>Tue, 31 Aug 2021 14:55:09 +0900</pubDate><author>bongjun.jang [at] kaist.ac.kr (Bongjun Jang)</author>
-      <guid>https://bongjunjang.com/tags/computer/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>domain-specific-language</title>
-      <link>https://bongjunjang.com/tags/domain-specific-language/</link>
-      <pubDate>Tue, 31 Aug 2021 14:55:09 +0900</pubDate><author>bongjun.jang [at] kaist.ac.kr (Bongjun Jang)</author>
-      <guid>https://bongjunjang.com/tags/domain-specific-language/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>functional-programming</title>
-      <link>https://bongjunjang.com/tags/functional-programming/</link>
-      <pubDate>Tue, 31 Aug 2021 14:55:09 +0900</pubDate><author>bongjun.jang [at] kaist.ac.kr (Bongjun Jang)</author>
-      <guid>https://bongjunjang.com/tags/functional-programming/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>programming-language</title>
-      <link>https://bongjunjang.com/tags/programming-language/</link>
-      <pubDate>Tue, 31 Aug 2021 14:55:09 +0900</pubDate><author>bongjun.jang [at] kaist.ac.kr (Bongjun Jang)</author>
-      <guid>https://bongjunjang.com/tags/programming-language/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>crud</title>
-      <link>https://bongjunjang.com/tags/crud/</link>
-      <pubDate>Mon, 30 Aug 2021 20:19:15 +0900</pubDate><author>bongjun.jang [at] kaist.ac.kr (Bongjun Jang)</author>
-      <guid>https://bongjunjang.com/tags/crud/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>event-sourcing</title>
-      <link>https://bongjunjang.com/tags/event-sourcing/</link>
-      <pubDate>Mon, 30 Aug 2021 20:19:15 +0900</pubDate><author>bongjun.jang [at] kaist.ac.kr (Bongjun Jang)</author>
-      <guid>https://bongjunjang.com/tags/event-sourcing/</guid>
       <description></description>
     </item>
     <item>
@@ -99,6 +43,13 @@
       <link>https://bongjunjang.com/tags/backend/</link>
       <pubDate>Sun, 29 Aug 2021 12:37:24 +0900</pubDate><author>bongjun.jang [at] kaist.ac.kr (Bongjun Jang)</author>
       <guid>https://bongjunjang.com/tags/backend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>computer</title>
+      <link>https://bongjunjang.com/tags/computer/</link>
+      <pubDate>Sun, 29 Aug 2021 12:37:24 +0900</pubDate><author>bongjun.jang [at] kaist.ac.kr (Bongjun Jang)</author>
+      <guid>https://bongjunjang.com/tags/computer/</guid>
       <description></description>
     </item>
     <item>

@@ -25,6 +25,13 @@
       <description>Short Answer: You call something is random because the best thing you can tell about it is just a guess.&#xA;Long Answer An intesting example that enligntened me was the famous coin toss problem. We believe that the coin toss is a 50/50 experiment. That&amp;rsquo;s why we toss coin for deciding which side will take the turn first in a game. We believe it is fair. But recent findings suggest that our belief could be wrong: the experiment is not 50/50.</description>
     </item>
     <item>
+      <title>Breaking Extended Vigenere Cipher</title>
+      <link>https://bongjunjang.com/posts/breaking-extended-vigenere-cipher/</link>
+      <pubDate>Fri, 13 Oct 2023 14:59:17 -0400</pubDate><author>bongjun.jang [at] kaist.ac.kr (Bongjun Jang)</author>
+      <guid>https://bongjunjang.com/posts/breaking-extended-vigenere-cipher/</guid>
+      <description>For Appliced cryptography Course for this semester in NYU Tandon, I have been assigned a project to break a vigenere cipher but an extended version. Since I had already done a homework in KAIST, which was to write Kasiski examination program in OCaml, I thought it was going to be a piece of cake. However, the little tweak in the encryption scheme made it a lot more interesting. It was quite painful to come up with other techniques to break the cipher, but knowledges gained the hard way dies hard.</description>
+    </item>
+    <item>
       <title>모든 프레임워크는 새로운 언어다</title>
       <link>https://bongjunjang.com/posts/2023-02-01-every-new-framework-is-new-language/</link>
       <pubDate>Wed, 01 Feb 2023 12:00:00 +0900</pubDate><author>bongjun.jang [at] kaist.ac.kr (Bongjun Jang)</author>
