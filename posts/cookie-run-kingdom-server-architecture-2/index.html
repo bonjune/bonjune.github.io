@@ -12,17 +12,20 @@
 </head>
 <body>
 	<header>
-  <a href="https://bongjunjang.com/">Bongjun Jang</a>
+  <center>
+    <a href="https://bongjunjang.com/">
+      <h1> Bongjun Jang </h1>
+    </a>
+  </center>
   
 </header>
 
 	
-	<main>
-		<article>
-			<h1>쿠키런 킹덤 서버 아키텍처 2</h1>
-			<time datetime="2021-08-30T20:19:15">2021 Aug 30</time>
-			<div>
-				<p>이번 포스트에서 다룰 내용은 CRUD와 Event Sourcing이다.
+<main>
+	<article>
+		<h1>쿠키런 킹덤 서버 아키텍처 2</h1>
+		<time datetime="2021-08-30T20:19:15">2021 Aug 30</time>
+		<p>이번 포스트에서 다룰 내용은 CRUD와 Event Sourcing이다.
 이 주제는 데이터를 다루는 방법에 대한 이야기다.</p>
 <p>가장 간단한 예로 은행 계좌를 관리하는 어플리케이션을 생각해보자.
 은행 계좌는 잔액를 관리해야하며 계좌 간의 송금 기능을 구현해야 한다.
@@ -55,7 +58,6 @@ CRUD 이외에 데이터를 다루는 방법이 있다는 것부터 생소한 �
 CRUD의 직관적인 모델과는 다른 면이 있다.</p>
    
 <figure>
-  <div>
     <img
       srcset='
                 /posts/cookie-run-kingdom-server-architecture-2/event_sourcing_transition_hu216eb6bdffddbe4a96a9ec0b365416bc_19281_320x0_resize_box_3.png 320w,
@@ -66,7 +68,6 @@ CRUD의 직관적인 모델과는 다른 면이 있다.</p>
       src='/posts/cookie-run-kingdom-server-architecture-2/event_sourcing_transition_hu216eb6bdffddbe4a96a9ec0b365416bc_19281_600x0_resize_box_3.png'
       alt=""
     />
-  </div>
   <figcaption>
     <p></p>
   </figcaption>
@@ -101,7 +102,6 @@ CRUD의 직관적인 모델과는 다른 면이 있다.</p>
 여기서 Command라는 개념이 나온다.</p>
    
 <figure>
-  <div>
     <img
       srcset='
                 /posts/cookie-run-kingdom-server-architecture-2/event_sourcing_command_execution_hu5e1e44be1bd082a04f7654f392df4339_56442_320x0_resize_box_3.png 320w,
@@ -112,7 +112,6 @@ CRUD의 직관적인 모델과는 다른 면이 있다.</p>
       src='/posts/cookie-run-kingdom-server-architecture-2/event_sourcing_command_execution_hu5e1e44be1bd082a04f7654f392df4339_56442_600x0_resize_box_3.png'
       alt=""
     />
-  </div>
   <figcaption>
     <p></p>
   </figcaption>
@@ -166,24 +165,9 @@ State 관리에 복잡한 매커니즘을 도입할 필요가 없어지는 것�
 다른 툴을 개발하거나, 게임 서버를 통해 이벤트를 발생시켜야하기 때문에 불편함이 있다고 한다.
 달리는 자동차의 바퀴를 갈아끼는 게 더 어려워진 것 같다. 웁스.</p>
 
-			</div>
-			
-			<div>
-				<h3>Tags</h3>
-				<ul id="tags">
-					
-					<li><a href="/tags/computer">computer</a></li>
-					
-					<li><a href="/tags/crud">crud</a></li>
-					
-					<li><a href="/tags/event-sourcing">event-sourcing</a></li>
-					
-				</ul>
-			</div>
-			
-			
-		</article>
-	</main>
+		
+	</article>
+</main>
 <aside>
 	<div>
 		<div>
@@ -192,15 +176,15 @@ State 관리에 복잡한 매커니즘을 도입할 필요가 없어지는 것�
 		<div>
 			<ul>
 				
-				<li><a href="/posts/%EC%9D%B4%EC%9C%A0%EB%A5%BC-%EC%B0%BE%EC%A7%80-%EB%A7%90%EB%9D%BC/">이유를 찾지 말라</a></li>
+				<li><a href="/posts/machine-learning-and-fuzzing/">기계 학습과 지향성 실행탐험기</a></li>
+				
+				<li><a href="/posts/what-is-random/">What is Randomness?</a></li>
+				
+				<li><a href="/posts/breaking-extended-vigenere-cipher/">Breaking Extended Vigenere Cipher</a></li>
 				
 				<li><a href="/posts/using-zig-with-c-1/">Odroid 개발보드에서 Zig와 C를 같이 사용하기</a></li>
 				
 				<li><a href="/posts/2023-02-01-every-new-framework-is-new-language/">모든 프레임워크는 새로운 언어다</a></li>
-				
-				<li><a href="/posts/actor-model-in-practice/">액터 모델 실습</a></li>
-				
-				<li><a href="/posts/what-runs-bitcoin-network/">비트코인을 지탱하는 원동력</a></li>
 				
 			</ul>
 		</div>
@@ -209,7 +193,7 @@ State 관리에 복잡한 매커니즘을 도입할 필요가 없어지는 것�
 
 
 	<footer>
-	<p>&copy; 2023 <a href="https://bongjunjang.com/">Bongjun Jang</a></p>
+	<p>&copy; 2024 <a href="https://bongjunjang.com/">Bongjun Jang</a></p>
 </footer>
 
 </body>
