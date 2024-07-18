@@ -6,7 +6,16 @@
     <description>Recent content on Bongjun Jang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Sat, 13 Jul 2024 18:24:59 +0900</lastBuildDate><atom:link href="https://bongjunjang.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Jul 2024 14:15:37 +0900</lastBuildDate><atom:link href="https://bongjunjang.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Compilers</title>
+      <link>https://bongjunjang.com/bookmarks/compilers/</link>
+      <pubDate>Thu, 18 Jul 2024 14:15:37 +0900</pubDate>
+      
+      <guid>https://bongjunjang.com/bookmarks/compilers/</guid>
+      <description>Superoptimizers https://www.cs.cornell.edu/courses/cs6120/2022sp/blog/superoptimizer/ </description>
+    </item>
+    
     <item>
       <title>Mastering Vscode</title>
       <link>https://bongjunjang.com/wiki/mastering-vscode/</link>

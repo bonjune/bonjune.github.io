@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bookmarks on Bongjun Jang</title>
+    <link>https://bongjunjang.com/bookmarks/</link>
+    <description>Recent content in Bookmarks on Bongjun Jang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Thu, 18 Jul 2024 14:15:37 +0900</lastBuildDate><atom:link href="https://bongjunjang.com/bookmarks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Compilers</title>
+      <link>https://bongjunjang.com/bookmarks/compilers/</link>
+      <pubDate>Thu, 18 Jul 2024 14:15:37 +0900</pubDate>
+      
+      <guid>https://bongjunjang.com/bookmarks/compilers/</guid>
+      <description>Superoptimizers https://www.cs.cornell.edu/courses/cs6120/2022sp/blog/superoptimizer/ </description>
+    </item>
+    
+  </channel>
+</rss>
